@@ -279,12 +279,12 @@ $(document).ready(function(){
 
                     $(".m-nav-bg").click(function(){
                         $(this).css({display: "none"});
-                        $(".m-nav").animate({right: "-300px"}, 100);
+                        $(".m-nav").animate({right: "-300px"}, 200);
                         $("body").removeClass("fix");
                     });
                     $("#btnNav").click(function(){
                         $(".m-nav-bg").css({display: "block"});
-                        $(".m-nav").animate({right: "0px"}, 100);
+                        $(".m-nav").animate({right: "0px"}, 200);
                         $("body").addClass("fix");
                     });
                 }
