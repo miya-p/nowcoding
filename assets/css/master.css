@@ -523,7 +523,7 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .m-header-wrap .m-header button span {position: absolute; display:block; left:17px; width:24px; height:2px; background: #fff; top:20px;}
 .m-header-wrap .m-header button span:nth-child(2) {top:29px;}
 .m-header-wrap .m-header button span:nth-child(3) {top:38px;}
-.m-header-wrap .m-nav-bg {position: fixed; z-index:111; display: none; background: rgba(0,0,0,.5); width: 100%; top:0; left:0; right:0; bottom:0;}
+.m-header-wrap .m-nav-bg {position: fixed; z-index:111; display: none; background: rgba(0,0,0,.3); width: 100%; top:0; left:0; right:0; bottom:0;}
 .m-header-wrap .m-nav {position: fixed; z-index:112; top:0; right:-300px; height:100%; background: #fff; width:300px; }
 .m-header-wrap .m-nav .box {overflow:auto; height:100%;}
 
@@ -576,7 +576,7 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .util_setting ul li:last-child a i {font-size:1.1rem; position: relative; top:2px;}
 .util_setting ul li:last-child a:hover {color:#222;}
 #character_mypage,
-#character {width:140px; height:140px; margin: 25px auto 15px; position: relative;}
+#character {width:140px; height:130px; margin: 25px auto 15px; position: relative;}
 #character_mypage a,
 #character a {display: block; position: absolute; width:130px; height:130px; border-radius: 50%; overflow: hidden;}
 #character_mypage a img,
