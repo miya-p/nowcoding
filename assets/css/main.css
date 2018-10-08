@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+.visual {background: url('../img/visual.png') center no-repeat; height: 931px;}
+.visual .mainText {padding: 240px 0 0;}
+.visual .mainText h2 {font-size:55px; height: auto; line-height: 125%; font-family: "Montserrat"; font-weight: 600; color:#fff;}
+.visual .mainText p {color: #fff; font-size:22px ; line-height: 140%; margin-top: 17px}
+.visual .mainText .btnArea {text-align: left;}
+
+.main section {margin: 150px 0}
+section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto; margin: 0 0 50px; font-family: "Montserrat"; font-weight: 600; color:#222;}
+
+.specArea h2 {display: none;}
+.specArea ul li {position: relative; padding: 70px 0 130px;}
+.specArea ul li dl > * {float: left; width:50%;}
+.specArea ul li dl::before {content: ""; display: block; position: absolute; width:3px; height:calc(100% - 140px); margin-top: 100px; background: #1050ff; left:50%; margin-left: -2px}
+.specArea ul li:last-child dl::before {display: none;}
+.specArea ul li dl dd {text-align: center;}
+.specArea ul li dl dd img {width: 70%;}
+.specArea ul li dl dd svg {position: absolute; left:10%; z-index: -1; }
+.specArea ul li:nth-child(2) dl dd svg {left:60%;}
+.specArea ul li:nth-child(2) dl dd {float: right;}
+.specArea ul li dl dt {width: 45%; margin-left: 5%}
+.specArea ul li dl dt strong {display: block; font-size: 36px; color:#111;height: auto; margin-bottom: 2rem; line-height: 140%; letter-spacing: -.04em}
+.specArea ul li dl dt p {line-height: 140%; width: 80%; margin: 0 0 3rem;}
+.specArea ul li dl dt .btnArea {text-align: left;}
+.specArea ul li dl dt a {background: #1050ff;}
+.specArea ul li::after {content: ""; display: block; clear: both;}
+.specArea ul li::before {content: "1"; display: block; width: 70px; height: 70px; line-height: 70px; left:50%; margin-left: -35px; background: url('../img/spec_bu.png'); background-size: 100%; position: absolute; text-align: center; color:#fff; font-size: 17px}
+.specArea ul li:nth-child(2)::before {content: "2"}
+.specArea ul li:nth-child(3)::before {content: "3"}
+
+/* Explore Courses */
+.expArea .course {position: relative;}
+.expArea .course::after {content: ""; display: block; float: none;}
+.expArea .courseImg {background-image: url("../img/course101.png");height: 540px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: cover;}
+.expArea .course .spec {position: absolute; top:60px; width: 440px; height: 350px; left:50%; margin-left: 120px; background: #fff;padding: 40px;}
+.expArea .course .spec > span {display: inline-block; width: 46px; height: 51px; line-height: 51px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;;}
+.expArea .course .spec h3 {font-size:30px; font-weight: 800; color:#333; height: auto;line-height: 120%; margin-bottom: 20px}
+.expArea .course .spec p {line-height: 140%; color:#aaa;}
+.expArea .course a {background: #ffcc33;}
+.expArea .course a span,
+.expArea .course a i {color: #222;}
+
+/* Project */
+.prjArea {text-align: center;}
+.prjArea ul li {float: left; width: calc(8.3334% - 2px ); margin:1px}
+.prjArea ul li img {width: 100%; display: block}
+.prjArea ul::after {content: ""; display: block; clear: both;}
+
+/* Learn Computer Science */
+section.lscArea {margin: 120px 0 0; overflow: hidden;}
+section.lscArea h2 {color:#fff;}
+section.lscArea h2 br {display: none;}
+.lscArea .lsc {background: #222;height: 520px;}
+.lscArea .lsc .inner {position: relative; z-index:4;}
+.lscArea .lsc p {text-align: center; font-size:20px; color:#fff; line-height: 140%}
+.lscArea .lsc a {display: block; text-align: center;width: 450px; height:85px; line-height: 85px; margin: 115px auto 0; font-size:26px; color:#fff; font-weight:800; border-radius: 40px; transition: all .3s;
+background: #843cf6; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #843cf6 0%, #44a6f3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #843cf6 0%,#44a6f3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #843cf6 0%,#44a6f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#843cf6', endColorstr='#44a6f3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.lscArea .lsc a:hover {-webkit-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);
+-moz-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);
+box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
+.lscArea .lsc .galaxy {position: relative;}
+.lscArea .lsc .galaxy img {position: absolute; left:50%; z-index:0;}
+.lscArea .lsc .galaxy .g01 {margin-top:-130px; left:70%;}
+.lscArea .lsc .galaxy .g02 {margin-top:260px; margin-left: -450px;}
+.lscArea .lsc .galaxy .g03 {margin-top:-30px; margin-left: -780px; z-index: 2;}
+.lscArea .lsc .galaxy .g04 {left:-10%; margin-top: -140px;}
+.lscArea .lsc .galaxy .g05 {left:80%;}
+.lscArea .lsc .galaxy .g06 {margin-top:450px; margin-left: 14%;}
+.lscArea .lsc .galaxy .g07 {margin-top:331px; margin-left: 283px;}
+.lscArea .lsc .galaxy .g08 {margin-top:353px; margin-left: 302px;}
+#waves {width: 100%; height: 120px; background-color: #fff; padding-top: 30px}
+
+
+
+
+@media all and (max-width:1279px){
+
+	.expArea .course .spec { width: 30%;}
+
+}
+
+@media (max-width:1023px){
+
+	.visual {height:780px; background-size: cover;}
+	.visual .mainText {padding: 185px 0 0;}
+	.main section {margin: 100px 0 ;}
+	section.lscArea {margin: 100px 0 0;}
+	section h2 {font-size: 35px;}
+	.prjArea ul li {width:calc(16.6657% - 2px);}
+	.prjArea ul li:nth-child(n+19) {display: none;}
+	.specArea ul li dl dt strong {font-size: 30px;}
+
+	.expArea .courseImg {height:400px;}
+	.expArea .course .spec {width:calc(100% - 120px); position: relative; height:auto; left:0%; top:-60px; margin-left: 0px; margin: 0 20px; padding:50px 40px;-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);}
+
+	.lscArea .lsc a {width: 350px; height: 65px; line-height: 65px; font-size: 22px;}
+	.lscArea .lsc p {width: 80%; margin: 0 auto;}
+	.lscArea .lsc p br {display: none;}
+	.lscArea .lsc .galaxy .g03 {margin-left: -55%}
+	.lscArea .lsc .galaxy .g04 {left:-30%;}
+
+}
+
+@media (max-width:767px){
+	.visual {height:580px;}
+	.visual .mainText {padding: 70px 0 0;}
+	.visual .mainText h2 {font-size: 30px; text-align: center;}
+	.visual .mainText p {font-size: 16px; text-align: center; opacity: .8;}
+	.visual .mainText .btnArea {text-align: center; margin: 220px 0 0;}
+
+	.specArea ul li {padding: 35px 0 70px;}
+	.specArea ul li dl::before {display: none;}
+
+	.specArea ul li dl > *,
+	.specArea ul li:nth-child(2) dl dd {float: none;}
+	.specArea ul li:nth-child(2) dl dd svg,
+	.specArea ul li dl dd svg {left:50%; margin-left: -180px;}
+	.specArea ul li::before {position: relative; margin-bottom: 30px;}
+	.specArea ul li dl dd img {width:70%;}
+	.specArea ul li dl dd {width:100%; margin-left: 0%;}
+	.specArea ul li dl dt {width:100%; margin-left: 0%;}
+	.specArea ul li dl dt strong {text-align: center; margin: 40px 0 0;}
+	.specArea ul li dl dt strong br {display: none;}
+	.specArea ul li dl dt p {width: 100%; margin: 1.3rem 0 0;}
+	.specArea ul li dl dt .btnArea {text-align: center;}
+
+	section.lscArea h2 br {display: block;}
+	.lscArea .lsc p {font-size: 16px;}
+	.lscArea .lsc .galaxy .g04 {left: -60%;}
+	.lscArea .lsc .galaxy .g03 {margin-left: -68%}
+
+	.expArea .courseImg {padding: 280px 0 0; height:60px;}
+	.expArea .course .spec {}
+	.expArea .course .spec h3 {font-size:26px;}
+
+	.prjArea ul li {width:calc(25% - 2px);}
+	.prjArea ul li:nth-child(n+17) {display: none;}
+
+}
+
+@media (max-width:639px){
+
+}
+
+@media (max-width:468px){
+	.specArea ul li dl dt strong {font-size:22px;}
+}

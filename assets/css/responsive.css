@@ -1,0 +1,158 @@
+.project_view.mob {display: block; width:100%; max-width: 980px; margin: 0 auto; background: #fff;}
+.project_view.mob::after {content: ""; display: block; clear: both;}
+
+.project_view.mob .left {float: left; width:600px;}
+.project_view.mob .right {float: right; width:380px; }
+
+@media all and (max-width:1279px){
+
+    .inner {width:calc(100% - 40px); margin: 0 20px;}
+    header nav {margin-left: 25%}
+    header .util > ul {margin-right: 20px}
+
+    /* 수업 */
+    .curriculum .list ul li dl {background: #fff;}
+    .curriculum .list ul li dl dd {width:60%; overflow:hidden; position: relative;}
+    .curriculum .list ul li dl dd img {height:100%; position: relative; left:50%; margin-left: -65%; }
+    .curriculum .list ul li:nth-child(even) dl dd {margin-left: 0px;}
+    .curriculum .list ul li dl dt {width:40%; margin-top: 0px; margin-left: 0px; padding:40px; height:auto;}
+
+    /* 마이페이지 */
+    .mypArea .container {width:calc(100% - 320px);}
+
+}
+
+@media (max-width:1023px){
+    header nav {margin-left: 10%}
+    header .util .memlog strong,
+    header .util .memlog.out span {display: none;}
+    header .util .memlog.out:before {content: "로그인"; display: inline-block; height:28px; line-height: 28px; border-radius: 3px; background: rgba(255,255,255,.3); color:#fff; width:56px; text-align: center; font-size:13px;}
+
+    .pop-wp form dl,
+    .loginArea.step1 ul.loginOther li {width: 80%;}
+
+    /* 프로젝트 */
+    .curr_list.row4 li {width:calc(33.3334% - 19px) !important;}
+    .curr_list.row4 li:nth-child(4n) {margin: 0 25px 25px 0; }
+    .curr_list.row4 li:nth-child(3n) {margin: 0 0px 25px 0; }
+
+    /* Settings */
+    .inner_s .box {padding: 20px 15px; position: relative;}
+    .mypArea h2 {font-size:20px;}
+    .settings .box table th {width:81px; text-align: left;}
+    .settings .box table td:last-child {min-width:55px;}
+
+}
+
+
+@media (max-width:979px){
+
+    /* 프로젝트 view */
+    .project_view.mob {}
+    .project_view.mob .left {float: left; width:61%;}
+    .project_view.mob .right {float: right; width:39%; }
+
+    /* 마이페이지 */
+    .mypArea .lnb {width:210px;}
+    .profile .util_my ul li a {width: 65%;}
+    .mypArea .container {width:calc(100% - 240px);}
+    .curr_list.row3 > ul > li {width:calc(50% - 12.5px); margin: 0 25px 25px 0;}
+    .curr_list.row3 > ul > li:nth-child(2n) {margin: 0 0 25px 0;}
+    .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 25px 25px 0;}
+
+}
+
+
+@media (max-width:767px){
+
+    header {display: none;}
+    .header-wrap {height: 60px;}
+    .m-header-wrap {display: block; position: relative; z-index: 110;}
+    section > .title {padding: 25px 0;}
+    section > .title h2 {font-size:24px; margin-bottom:0px;}
+    section > .title p {font-size:13px; line-height: 1.5;}
+    footer .info .gnb ul li a {font-size: 12px;}
+    footer .info .address {font-size: 12px;}
+
+    .loginArea {width: 90%;}
+    .joinArea .left,
+    .joinArea .right {float: none; height:auto; width:100%;}
+
+    /* 수업 */
+    .curriculum .list ul li dl {background: transparent;}
+    .curriculum .list ul li dl dd {width:100%;float: none; }
+    .curriculum .list ul li dl dt {width:90%; margin: -40px auto 0 !important; float: none; padding: 30px; text-align: center;}
+    .curriculum .list ul li:nth-child(even) dl dd,
+    .curriculum .list ul li:nth-child(even) dl dt {float: none;}
+    .curriculum .list ul li dl dt strong {font-size:16px; }
+    .curriculum .list ul li dl dt strong br {display: none;}
+    .curriculum .list ul li dl dt p {font-size:12px; margin: 15px 0 30px;}
+    .curriculum .list ul li dl dt a.btnGreen {display: inline-block; margin: 0 auto;}
+    .curriculum .list ul li dl dd img {height:auto; width:100%; left:0%; margin-left: 0%;}
+
+    /* 프로젝트 */
+    .curr_list.row4 li {width:calc(50% - 12.5px) !important;}
+    .curr_list.row4 li:nth-child(2n) {margin: 0 0 25px 0; }
+    .curr_list.row4 li:nth-child(3n) {margin: 0 25px 25px 0; }
+    .curr_list.row4 li:nth-child(6n) {margin: 0 0 25px 0; }
+
+    /* 프로젝트 view */
+    .project_view.mob .left,
+    .project_view.mob .right {float: none; width:100%; }
+    .project_view.mob .reply .list_reply {height:315px;;}
+    .project_view.mob .content {padding: 40px 20px;}
+    .project_view.mob .content p {max-height:180px;}
+    .project_view.mob .reply {padding: 35px 20px 0;}
+
+    /* Settings */
+    .inner_s {width:calc(100% - 40px); margin: 0 20px;}
+    .settings .box table td small {position: absolute; left:15px; top:70px; width:calc(100% - 30px);}
+    .settings .box table td .info_toggle {float: right;}
+    .settings .box table td span.connect_date {display: none;}
+    .settings .box table tr.set_account th,
+    .settings .box table tr.set_account td {padding-bottom: 70px; vertical-align: top;}
+
+    .csInfo img {width:18%;}
+    .csRequest table th {text-align: left; padding-right: 0px; width:100px; min-width: 0px}
+    .csRequest table tr:last-child td input {width: calc(100% - 70px);}
+
+    .mypArea .lnb {display: none;}
+    .mypArea .container {width: 100%; float: none;}
+
+    /* 로그인, 회원가입 팝업 */
+    .pop-wp .btn-pop-close {font-family: xeicon!important; width:50px;height:50px; line-height: 50px; text-align: center; content: "\e922"; display: inline-block; position: absolute; right:0; top:0; font-size:32px; cursor:pointer;}
+    .joinArea,
+    .findArea,
+    .loginArea {width: 100%; height:auto; max-width:100%;}
+    .joinArea .right {padding: 50px 0;}
+    .joinArea .left {width:80%; margin: 0 auto; padding: 0; background: transparent;}
+
+}
+
+@media (max-width:639px){
+
+    footer h1 {float: none; margin-bottom: 20px;}
+    footer .info {float: none; width: 100%;}
+    footer .info .address span {display: block; height: 0px}
+
+}
+
+@media (max-width:468px){
+
+    /* 프로젝트 */
+    .curr_list.row3 > ul > li {width:100%; float: none;}
+    .curr_list.row3 > ul > li:nth-child(2n),
+    .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 0 25px;}
+
+    .curr_list.row4 li {width:100% !important;}
+    .curr_list.row4 li:nth-child(2n),
+    .curr_list.row4 li:nth-child(3n) {margin: 0 auto 25px; }
+
+}
+
+@media (max-height:540px){
+
+    /* Login */
+
+
+}

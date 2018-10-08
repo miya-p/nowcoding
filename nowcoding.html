@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>NOWCODING</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:url"                content="https://www.nowcoding.com/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="NOWCODING" />
+    <meta property="og:description"        content="온라인 코딩 교육 사이트 나우코딩" />
+    <meta property="og:image"              content="url" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/usage.js"></script>
+
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+</head>
+<body class="sub aboutus">
+
+    <script src='assets/include/pop-member.js'></script>
+    <script src='assets/include/header.js'></script>
+
+    <section class="company">
+        <div class="title">
+            <h2>회사소개</h2>
+            <p>내용이 들어갑니다 내용이 들어갑니다 내용이 들어갑니다 내용이 들어갑니다 내용이 들어갑니다 내용이 들어갑니다 내용이 들어갑니다 내용이 들어갑니다</p>
+        </div>
+        <div class="container">
+
+            <h3>회사소개</h3>
+
+            <h3>오시는 길</h3>
+            <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=anjGYlDJtblYKV3S3W1T&submodules=geocoder"></script>
+            <div id="map"  style="width:100%;height:400px;"></div>
+            <script>
+            var HOME_PATH = window.HOME_PATH || '.';
+            var position = new naver.maps.LatLng(37.574740, 126.97939);
+
+            var map = new naver.maps.Map('map', {
+                center: position,
+                zoomControl: true, //줌 컨트롤의 표시 여부
+                zoomControlOptions: { //줌 컨트롤의 옵션
+                    position: naver.maps.Position.TOP_RIGHT
+                },
+                zoom: 12
+            });
+
+            var markerOptions = {
+                position: position.destinationPoint(90, 15),
+                map: map,
+                icon: {
+                    url: HOME_PATH +'/assets/img/pointer_map.png',
+                    size: new naver.maps.Size(37, 52),
+                    origin: new naver.maps.Point(0, 0),
+                    anchor: new naver.maps.Point(25, 26)
+                }
+            };
+
+            var marker = new naver.maps.Marker(markerOptions);
+
+
+            </script>
+            <div class="map_util">
+                <address>서울특별시 종로구 종로1길 50 4층 레슨어블</address>
+                <div class="map_link">
+                    <a href="#" class='naver'>네이버 지도로 가기</a>
+                    <a href="#" class='google'>구글 지도로 가기</a>
+                    <a href="#" class='daum'>다음 지도로 가기</a>
+                </div>
+            </div>
+
+        </div><!-- e.container-->
+    </section>
+
+    <script src='assets/include/footer.js'></script>
+
+</body>
+</html>

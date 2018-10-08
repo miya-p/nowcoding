@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>NOWCODING</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:url"                content="https://www.nowcoding.com/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="NOWCODING" />
+    <meta property="og:description"        content="온라인 코딩 교육 사이트 나우코딩" />
+    <meta property="og:image"              content="url" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../assets/js/usage.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body class="sub pol">
+
+    <script src='../assets/include/pop-member.js'></script>
+    <script src='../assets/include/header.js'></script>
+
+    <section class="policy">
+        <div class="title">
+            <h2>고객문의</h2>
+            <p></p>
+        </div>
+        <div class="inner_s">
+
+            <div class="box">
+                <div class="csInfo">
+                    <img src="../assets/img/cs_ghost.png" alt="">
+                    <p>나우코딩 고객 이용 관련 문의</p>
+                </div>
+                <form class="csRequest" action=".html" method="post">
+                    <table>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" name="" value="" placeholder="홍길동" required> </td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>
+                                <input type="type" name="tphone" value="" id="tphone" placeholder="01012345678" maxlength="11"><span id="errmsg"></span>
+
+                                <small>전화번호는 문의답변을 위한 용도로 사용되며 답변이 완료된 시점에 즉시 파기됩니다.</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>문의사항</th>
+                            <td>
+                                <textarea name="name" rows="8" cols="80" placeholder="문의사항을 남겨주세요."  onkeyup="countChar(this)" required></textarea>
+                                <p id="charNum">500 / 500</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>자동입력방지</th>
+                            <td>
+                                <img src="../assets/img/i_roboteng.png" alt="" class="i_robot">
+                                <input type="text" name="" value="" placeholder="코드 입력" maxlength="6">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="btnArea">
+                        <button type="button" name="button" class="btnOrange">보내기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src='../assets/include/footer.js'></script>
+
+  </body>
+</html>

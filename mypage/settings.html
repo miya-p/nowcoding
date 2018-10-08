@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>NOWCODING</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:url"                content="https://www.nowcoding.com/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="NOWCODING" />
+    <meta property="og:description"        content="온라인 코딩 교육 사이트 나우코딩" />
+    <meta property="og:image"              content="url" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../assets/js/usage.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body class="sub mypage">
+
+    <script src='../assets/include/pop-member.js'></script>
+    <script src='../assets/include/header.js'></script>
+
+    <section class="mypArea settings">
+        <div class="inner_s">
+            <h2>프로필/계정 설정 <small>설명이 들어갑니다. 설명</small> </h2>
+            <div class="box">
+                <table>
+                    <tr>
+                        <th>
+                            <figure>
+                                <img src="../assets/img/img_sample.png" alt="sample">
+                            </figure>
+                        </th>
+                        <td>
+                            <input type="text" name="marine123" value="marine123" class="info_id" readonly>
+                            <button type="button" name="button" class="btnBlur">프로필 사진 변경</button>
+                        </td>
+                        <td><!--<button type="button" name="button" class="btnBlur">수정</button>--> </td>
+                    </tr>
+                    <tr>
+                        <th>사용자 이름</th>
+                        <td><input type="text" name="" value="박미진" placeholder="박미진"> </td>
+                        <td><!--<button type="button" name="button" class="btnBlur">수정</button>--> </td>
+                    </tr>
+                    <tr>
+                        <th>생년월일</th>
+                        <td><input type="text" name="" value="2002.03.01" placeholder="2002.03.01"> </td>
+                        <td><!--<button type="button" name="button" class="btnBlur">수정</button>--> </td>
+                    </tr>
+                    <tr>
+                        <th>성별</th>
+                        <td><input type="text" name="" value="여" placeholder="여"> </td>
+                        <td><!--<button type="button" name="button" class="btnBlur">수정</button>--> </td>
+                    </tr>
+                    <tr>
+                        <th>이메일주소</th>
+                        <td><input type="text" name="" value="marine123@gmail.com" placeholder="marine123@gmail.com"> </td>
+                        <td><button type="button" name="button" class="btnBlur">수정</button> </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input type="password" name="" value="박미진" placeholder="박미진"> </td>
+                        <td><button type="button" name="button" class="btnBlur">수정</button> </td>
+                    </tr>
+                </table>
+                <table class="mt20">
+                    <tr>
+                        <th>소속 학교</th>
+                        <td><input type="text" name="" value="서울대학교 부속초등학교" placeholder="marine123@gmail.com"> </td>
+                        <td><button type="button" name="button" class="btnBlur">수정</button> </td>
+                    </tr>
+                    <tr>
+                        <th>학년</th>
+                        <td><input type="text" name="" value="1학년" placeholder="1학년"> </td>
+                        <td><button type="button" name="button" class="btnBlur">수정</button> </td>
+                    </tr>
+                </table>
+            </div>
+            <p class='user_inactive'>
+                <a href="#">계정 비활성화</a>
+            </p>
+            <h2 class="mt70">계정 연결 <small>설명이 들어갑니다. 설명</small> </h2>
+            <div class="box">
+                <table>
+                    <tr>
+                        <th>볼비온 이력서</th>
+                        <td>연결안됨</td>
+                        <td>
+                            <a href="#" class="btnGrey"><b class="info_bul"></b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>레슨어블</th>
+                        <td>연결됨 <span class="connect_date">(최종 연결일 : 2018-09-22)</span></td>
+                        <td>
+                            <a href="#" class="btnGrey"><b class="info_less on"></b></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="mt70">공개범위 설정 <small>설명이 들어갑니다. 설명</small> </h2>
+            <div class="box">
+                <table>
+                    <tr class="set_account">
+                        <th>나의 계정</th>
+                        <td><small>비공개 상태가 되면 회원님이 승인한 사람만 회원님의 컨텐츠를 볼 수 있습니다. 기존 팔로워는 영향을 받지 않습니다.</small></td>
+                        <td>
+                            <div class="info_toggle">
+                                <input type="radio" id="ac1_n" name="ac1" value="n"><label for="ac1_n" class="checked">비공개</label>
+                                <input type="radio" id="ac1_y" name="ac1" value="y"><label for="ac1_y">공개</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>학교 및 학년</th>
+                        <td></td>
+                        <td>
+                            <div class="info_toggle">
+                                <input type="radio" id="ac2_n" name="ac2" value="n"><label for="ac2_n" class="checked">비공개</label>
+                                <input type="radio" id="ac2_y" name="ac2" value="y"><label for="ac2_y">공개</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>나의 수업</th>
+                        <td></td>
+                        <td>
+                            <div class="info_toggle">
+                                <input type="radio" id="ac3_n" name="ac3" value="n"><label for="ac3_n" class="checked">비공개</label>
+                                <input type="radio" id="ac3_y" name="ac3" value="y"><label for="ac3_y">공개</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>프로젝트</th>
+                        <td></td>
+                        <td>
+                            <div class="info_toggle">
+                                <input type="radio" id="ac4_n" name="ac4" value="n"><label for="ac4_n" class="checked">비공개</label>
+                                <input type="radio" id="ac4_y" name="ac4" value="y"><label for="ac4_y">공개</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>나의 블록</th>
+                        <td></td>
+                        <td>
+                            <div class="info_toggle">
+                                <input type="radio" id="ac5_n" name="ac5" value="n"><label for="ac5_n" class="checked">비공개</label>
+                                <input type="radio" id="ac5_y" name="ac5" value="y"><label for="ac5_y">공개</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src='../assets/include/footer.js'></script>
+
+  </body>
+</html>
