@@ -326,6 +326,9 @@ $(document).ready(function(){
                         $(this).css({display: "none"});
                         $(".m-nav").animate({right: "-300px"}, 200);
                         $("body").removeClass("fix");
+						const myChart = $("#character").delay(5000).donutty({
+							value: 0
+						});
                     });
                     $("#btnNav").click(function(){
                         $(".m-nav-bg").css({display: "block"});
