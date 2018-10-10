@@ -147,11 +147,17 @@ function hasScrolled() {
 
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
+        $('header').animate({
+			top: '-60px',
+			opacity: 0
+		});
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+        $('header').animate({
+			top: '0px',
+			opacity: 1
+		});
         }
     }
     lastScrollTop = st;
@@ -303,7 +309,6 @@ $(document).ready(function(){
         $(window).resize(function() {
             delay(function() {
                 var width = $(window).width();
-
 				var prjHeight = $(".curr_list.prj > ul > li:nth-child(2)").outerHeight();
 				$(".curr_list.prj > ul > li:nth-child(1)").css("height", prjHeight - 4);
 
@@ -322,7 +327,6 @@ $(document).ready(function(){
                         $(".m-nav-bg").css({display: "block"});
                         $(".m-nav").animate({right: "0px"}, 200);
                         $("body").addClass("fix");
-
 						const myChart = $("#character").delay(5000).donutty({
 							min: -100,
 							max: 100,
