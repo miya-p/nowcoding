@@ -94,7 +94,6 @@ setInterval(function() {
 function hasScrolled() {
     var st = $(this).scrollTop();
 
-    // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
 
@@ -102,10 +101,13 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
+        $('header').animated({
+			top: '-60px';
+			opacity: 0;
+		});
         $('.m-header').removeClass('nav-down').addClass('nav-up');
 	}else if (st <= navbarHeight) {
-		//console.log(st);
+		//console.log(st); 맨위에 닿았을 때
         $('header').removeAttr('class');
         $('.m-header').removeClass('nav-down').removeClass('nav-up');
 
@@ -173,7 +175,7 @@ $(document).ready(function(){
     });
 
     /* mypage */
-    const myChart = $("#character, #character_mypage").donutty({
+    const myChart = $("#character, #character_mypage").delay(4000).donutty({
         min: -100,
         max: 100,
         value: 50,

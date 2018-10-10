@@ -279,9 +279,8 @@ textarea:focus, input:focus, button:focus  {outline: none;}
 .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
 body.fix {overflow: hidden; width: 100vw; height: 100vh;}
 .header-wrap {height:65px;}
-header {width:100%; height: 65px; z-index: 5;}
-header.nav-down {position: fixed; }
-header.nav-up { position: fixed; top:-65px;}
+header {width:100%; height: 65px; z-index: 5; position: fixed; opacity:1;}
+/* header.nav-up {} */
 header:after {content: ""; display: block; clear: both; height: 0}
 header h1 {display: inline-block; width: auto; float: left}
 header h1 a {width: 140px; height: 47px; display:  block; text-indent: -999px; overflow: hidden;  background: url('../img/logo.png') no-repeat; background-size: contain; margin: 10px 0 0}
@@ -306,7 +305,7 @@ header .util .memlog::after {content: ""; display: block; clear: both;}
     .tooltip-bg {background: rgba(0,0,0,.0); width:100vw;  top:0; bottom:0; left:0; right:0; overflow:hidden; position: absolute; z-index: 2; display: none;}
     .tooltip.alarm {position: absolute; z-index: 3; width:380px; height:290px; margin-left: -188px; margin-top: 20px; z-index:10;}
     .tooltip.alarm::after {content: ''; display: inline-block; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #fff; position: absolute; top:-7px; left:194px; z-index: 3; }
-    .tooltip.alarm .tooltipArea {background: #fff; width:380px; height:290px; position: relative; overflow:hidden; border-radius: 6px; -webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);-moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2); box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
+    .tooltip.alarm .tooltipArea {background: #fff; width:380px; height:320px; position: relative; overflow:hidden; border-radius: 6px; -webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);-moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2); box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 
     .tooltip.alarm .alarmArea {width:380px; position: absolute;}
     .tooltip.alarm .title {height:50px; border-bottom:1px solid #eee; padding: 0 25px}
@@ -315,7 +314,7 @@ header .util .memlog::after {content: ""; display: block; clear: both;}
     .tooltip.alarm .alarmArea .title::after {content: ''; display: block; clear: both;}
 
     .tooltip.alarm .alarmArea .requestList,
-    .tooltip.alarm .followRequestArea .followList {width:380px; padding: 0 25px; height:240px; overflow-y: auto;}
+    .tooltip.alarm .followRequestArea .followList {width:380px; padding: 0 25px; height:270px; overflow-y: auto;}
     .tooltip.alarm .alarmArea .requestList strong {display: block; font-size:12px; height:24px; margin: 25px 0 0;}
     .tooltip.alarm ul li {margin-bottom: 15px;}
     .tooltip.alarm ul li > div {float: left}
@@ -434,7 +433,6 @@ button.btnBlue {display: block; margin: 40px auto 0; width: 240px; height:45px; 
 .chkArea label.checked i {color:#00bc7c;}
 .chkArea label.checked i::before {border-color:#00bc7c;}
 
-.m-nav .m-logoff,
 .sub.mypage .m-nav .m-logoff,
 .sub.message header,
 .sub.message .header-wrap,
@@ -447,7 +445,6 @@ background: -webkit-linear-gradient(-45deg, #15c8f6 0%,#3875f3 100%); /* Chrome1
 background: linear-gradient(135deg, #15c8f6 0%,#3875f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15c8f6', endColorstr='#3875f3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 
-.sub.curr .m-nav .m-logoff,
 section.curriculum > .title,
 .sub.curr .header-wrap,
 .sub.curr header,
@@ -458,7 +455,6 @@ background: -webkit-linear-gradient(left, #58c8ca 0%,#4ac673 100%); /* Chrome10-
 background: linear-gradient(to right, #58c8ca 0%,#4ac673 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58c8ca', endColorstr='#4ac673',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 
-.m-header.nav-down,
 .sub.prj .m-nav .m-logoff,
 section.project > .title,
 main header.nav-down,
@@ -471,7 +467,6 @@ background: -webkit-linear-gradient(left, #8658e4 0%,#4a60e9 100%); /* Chrome10-
 background: linear-gradient(to right, #8658e4 0%,#4a60e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8658e4', endColorstr='#4a60e9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 
-.sub.aboutus .m-nav .m-logoff,
 section.company > .title,
 .sub.aboutus .header-wrap,
 .sub.aboutus header,
@@ -482,7 +477,6 @@ background: -webkit-linear-gradient(left, #cc5aa4 0%,#544ae4 100%); /* Chrome10-
 background: linear-gradient(to right, #cc5aa4 0%,#544ae4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5aa4', endColorstr='#544ae4',GradientType=1 );}
 
-.sub.pol .m-nav .m-logoff,
 section.policy > .title,
 .sub.pol .header-wrap,
 .sub.pol header,
@@ -515,7 +509,7 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 
 .m-header-wrap {display: none;}
 .m-header-wrap .m-header {height:60px; width:100%; position: fixed;}
-.m-header-wrap .m-header.nav-up {top:-60px;}
+/* .m-header-wrap .m-header.nav-up {top:-60px;} */
 .m-header-wrap .m-header h1 {display: inline-block; float: left; margin: 10px 0 0 20px;}
 .m-header-wrap .m-header h1 a {width: 140px; height: 40px; display:  block; text-indent: -999px; overflow: hidden;  background: url('../img/logo.png') no-repeat; background-size: contain;}
 .m-header-wrap .m-header button {width:60px; height:60px; float: right; right:0px; display: block;  position: relative;}
@@ -551,7 +545,7 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .m-header-wrap .m-nav .info-wrap .util ul li a i {display: inline-block; font-size: 1.3rem; position: relative; top:3px;}
 .m-header-wrap .m-nav nav {padding-bottom: 65px;}
 .m-header-wrap .m-nav nav ul li {float: left; width:33.3334%; text-align: center; height:55px; margin-top: 30px}
-.m-header-wrap .m-nav nav ul li a i {display: block; font-size:1.8rem; margin-bottom: 6px; color:#222;}
+.m-header-wrap .m-nav nav ul li a i {display: block; font-size:1.8rem; margin-bottom: 6px; color:#555;}
 .m-header-wrap .m-nav nav ul li a span {color:#222;}
 .m-header-wrap .m-nav nav::after {content: ""; display: block; clear: both;}
 .m-header-wrap .m-nav .m-alt {position: absolute; width:100%; height: 48px; bottom: 0px; border-top:1px solid #eee; background: #fff;}

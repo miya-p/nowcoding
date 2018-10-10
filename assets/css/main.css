@@ -32,9 +32,9 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 /* Explore Courses */
 .expArea .course {position: relative;}
 .expArea .course::after {content: ""; display: block; float: none;}
-.expArea .courseImg {background-image: url("../img/course101.png");height: 540px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: cover;}
-.expArea .course .spec {position: absolute; top:60px; width: 440px; height: 350px; left:50%; margin-left: 120px; background: #fff;padding: 40px;}
-.expArea .course .spec > span {display: inline-block; width: 46px; height: 51px; line-height: 51px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;;}
+.expArea .courseImg {background-image: url("../img/course101.png"); height: 600px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: cover;}
+.expArea .course .spec {position: absolute; top:60px; width: 400px; height: 350px; left:50%; margin-left: 240px; background: #fff;padding: 40px;}
+.expArea .course .spec > span {display: inline-block; width: 46px; height: 51px; line-height: 51px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;}
 .expArea .course .spec h3 {font-size:30px; font-weight: 800; color:#333; height: auto;line-height: 120%; margin-bottom: 20px}
 .expArea .course .spec p {line-height: 140%; color:#aaa;}
 .expArea .course a {background: #ffcc33;}

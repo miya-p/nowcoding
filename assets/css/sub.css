@@ -75,7 +75,7 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 
 .search_prj {width:80%; max-width:1280px; height:60px; background:#fff; margin: 40px auto 0;}
 .search_prj input[type=text] {background: transparent; border:0px ; text-align: center; width:calc(100% - 50px); height:60px; line-height: 60px; font-size:16px;}
-.search_prj button i {font-size:22px; color:#5850e7;}
+.search_prj button i {font-size:26px; color:#5850e7;}
 
 .curriculum {background: #f5f6fa;}
 .curriculum .list ul li {margin-bottom: 50px}
