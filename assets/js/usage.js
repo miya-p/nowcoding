@@ -108,12 +108,16 @@ function hasScrolled() {
         $('.m-header').removeClass('nav-down').addClass('nav-up');
 	}else if (st <= navbarHeight) {
 		//console.log(st); 맨위에 닿았을 때
-        $('header').removeAttr('class');
+        $('header').removeAttr('style');
         $('.m-header').removeClass('nav-down').removeClass('nav-up');
 
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
+	        $('header').animate({
+				top: '0px',
+				opacity: 1
+			});
             $('header').removeClass('nav-up').addClass('nav-down');
 	        $('.m-header').removeClass('nav-up').addClass('nav-down');
         }
