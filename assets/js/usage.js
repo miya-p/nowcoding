@@ -102,8 +102,8 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('header').animated({
-			top: '-60px';
-			opacity: 0;
+			top: '-60px',
+			opacity: 0
 		});
         $('.m-header').removeClass('nav-down').addClass('nav-up');
 	}else if (st <= navbarHeight) {
