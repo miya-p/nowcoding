@@ -101,7 +101,7 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').animated({
+        $('header').animate({
 			top: '-60px',
 			opacity: 0
 		});
