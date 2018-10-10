@@ -22,7 +22,7 @@
 .curr_list.row3 > ul > li:nth-child(3n) {margin: 0px;}
 
 .curr_list > ul > li .title {padding: 20px;}
-.curr_list > ul > li .title strong {display: block; font-size:15px; color:#444; margin-bottom: 13px;}
+.curr_list > ul > li .title strong {display: block; font-size:15px; color:#444; margin-bottom: 13px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:100%; overflow:hidden;}
 .curr_list > ul > li .title p {font-size: 13px; color:#8c89a2; text-overflow: ellipsis; height: 17px; overflow: hidden;  white-space: nowrap;}
 .curr_list > ul > li .title span {font-size: 13px; color:#ccc;}
 .curr_list > ul > li .title span:after {content: "";display: inline-block; width:5px;}
@@ -35,6 +35,26 @@ box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05);}
 .curr_list.prj ul li:first-child div {display: table-cell; vertical-align: middle; text-align: center}
 .curr_list.prj ul li:first-child div a {color:#8c89a2; font-size:16px;}
 .curr_list.prj ul li:first-child div a i {font-size:90px; }
+
+.curr_list_recommend .slick-list:after {content: ""; display: block; background: url('../img/shadow_list.png'); width:40px; height:100%; position: absolute; z-index: 2; right: 0px; top: 0px;}
+.curr_list_recommend .slick-slide {background: #fff;margin-left: 25px;}
+.curr_list_recommend .slick-slide figure {width:240px;}
+.curr_list_recommend .slick-slide figure img {width: 100%;}
+.curr_list_recommend .slick-slide .title {padding: 20px}
+.curr_list_recommend .slick-slide .title strong {display: block;}
+.curr_list_recommend .slick-slide .title strong a {font-weight: 800; color:#222; font-size: 15px;}
+.curr_list_recommend .slick-slide .title .rate {margin: 10px 0 0;}
+.curr_list_recommend .slick-slide .title .rate span {display: inline-block; width: 20px; height:20px; background: url('../img/i_rate_star.png') 0 0; margin-right: 3px;}
+.curr_list_recommend .slick-slide .title .rate.r0 span:nth-child(n+1) {background-position: 0 -20px;}
+.curr_list_recommend .slick-slide .title .rate.r1 span:nth-child(n+2) {background-position: 0 -20px;}
+.curr_list_recommend .slick-slide .title .rate.r2 span:nth-child(n+3) {background-position: 0 -20px;}
+.curr_list_recommend .slick-slide .title .rate.r3 span:nth-child(n+4) {background-position: 0 -20px;}
+.curr_list_recommend .slick-slide .title .rate.r4 span:nth-child(n+5) {background-position: 0 -20px;}
+.curr_list_recommend .slick-slide .title .rate.r5 span:nth-child(n+6) {background-position: 0 -20px;}
+.curr_list_recommend .slick-arrow {position: absolute; right:0; top:-56px;text-indent: -9999px; overflow:hidden; height:38px; width:38px; border:1px solid #eee; background: #fff;}
+.curr_list_recommend .slick-arrow.slick-prev {right:37px;}
+.curr_list_recommend .slick-arrow.slick-prev::after {content: "<"; display: inline-block;}
+.curr_list_recommend .slick-arrow.slick-next::after {content: ">"; display: inline-block;}
 
 figure { position: relative; overflow: hidden;}
 figure img.origin {position: absolute; left:0px; top:0; right:0; bottom:0; width:100%;}
