@@ -74,7 +74,7 @@ function countChar(val) {
     }
 };
 
-/*  Header scroll down  */
+/*  Header scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 65;
@@ -122,6 +122,45 @@ function hasScrolled() {
 	        $('.m-header').removeClass('nav-up').addClass('nav-down');
         }
     }
+    lastScrollTop = st;
+} */
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
     lastScrollTop = st;
 }
 
@@ -179,7 +218,7 @@ $(document).ready(function(){
     });
 
     /* mypage */
-    const myChart = $("#character, #character_mypage").delay(4000).donutty({
+    const myChart = $("#character_mypage").delay(4000).donutty({
         min: -100,
         max: 100,
         value: 50,
@@ -292,6 +331,16 @@ $(document).ready(function(){
                         $(".m-nav-bg").css({display: "block"});
                         $(".m-nav").animate({right: "0px"}, 200);
                         $("body").addClass("fix");
+						/* mypage */
+						const myChart = $("#character").delay(5000).donutty({
+							min: -100,
+							max: 100,
+							value: 50,
+							radius:60,
+							padding: 0,
+							color: "rgba(120, 107, 230, .6)",
+							bg: "rgba(230, 236, 243, 1)"
+						});
                     });
                 }
             }, pause);

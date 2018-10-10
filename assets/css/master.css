@@ -570,7 +570,7 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .util_setting ul li:last-child a i {font-size:1.1rem; position: relative; top:2px;}
 .util_setting ul li:last-child a:hover {color:#222;}
 #character_mypage,
-#character {width:140px; height:130px; margin: 25px auto 15px; position: relative;}
+#character {width:130px; height:130px; margin: 25px auto 15px; position: relative;}
 #character_mypage a,
 #character a {display: block; position: absolute; width:130px; height:130px; border-radius: 50%; overflow: hidden;}
 #character_mypage a img,

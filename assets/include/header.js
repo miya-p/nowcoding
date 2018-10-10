@@ -139,7 +139,7 @@ document.write(
 
 + ' <div class="m-header-wrap">'
 + '     <div class="m-header">'
-+ '         <h1><a href="/index.html">NOWCODING</a></h1>'
++ '         <h1><a href="/nowcoding/index.html">NOWCODING</a></h1>'
 + '         <button type="button" name="button" id="btnNav">'
 + '             <span></span> <span></span> <span></span>'
 + '         </button>'
