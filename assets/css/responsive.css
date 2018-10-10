@@ -35,6 +35,10 @@
     .curr_list.row4 li {width:calc(33.3334% - 19px) !important;}
     .curr_list.row4 li:nth-child(4n) {margin: 0 25px 25px 0; }
     .curr_list.row4 li:nth-child(3n) {margin: 0 0px 25px 0; }
+    
+    .curr_list.row3 > ul > li {width:calc(50% - 12.5px); margin: 0 25px 25px 0;}
+    .curr_list.row3 > ul > li:nth-child(2n) {margin: 0 0 25px 0;}
+    .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 25px 25px 0;}
 
     /* Settings */
     .inner_s .box {padding: 20px 15px; position: relative;}
@@ -56,9 +60,6 @@
     .mypArea .lnb {width:210px;}
     .profile .util_my ul li a {width: 65%;}
     .mypArea .container {width:calc(100% - 240px);}
-    .curr_list.row3 > ul > li {width:calc(50% - 12.5px); margin: 0 25px 25px 0;}
-    .curr_list.row3 > ul > li:nth-child(2n) {margin: 0 0 25px 0;}
-    .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 25px 25px 0;}
 
 }
 
