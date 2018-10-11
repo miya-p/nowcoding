@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+
+body {width:100%; height:100%; margin: 0; padding: 0;}
+figure {margin: 0; padding: 0;}
+.page404 {background: url('../img/bg_404_star.png') center top;}
+.page404 section {width: 100%; max-width: 480px; margin: 15% auto 0; text-align: center;}
+.page404 section figure {text-align: center;}
+.page404 section figure img {width: 100%;}
+.page404 section p {font-size: 26px; color:#fff; font-family: 'Montserrat'; font-weight: 300; text-align: center; margin: 50px 0 0;}
+
+.page404 section a {display: inline-block; margin: 0 auto; padding: 14px 0;  margin: 26px 0 0; width: 180px; border-radius: 3px; background:#00a77f; color:#fff; text-decoration: none; text-align: center; font-size:18px;}
+
+@media (max-width:767px){
+
+    .page404 section figure img {width:70%;}
+
+}

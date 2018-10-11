@@ -70,99 +70,6 @@ function countChar(val) {
     }
 };
 
-/*  Header scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 65;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').animate({
-			top: '-60px',
-			opacity: 0
-		});
-        $('.m-header').removeClass('nav-down').addClass('nav-up');
-	}else if (st <= navbarHeight) {
-		//console.log(st); 맨위에 닿았을 때
-        $('header').removeAttr('style');
-        $('.m-header').removeClass('nav-down').removeClass('nav-up');
-
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-	        $('header').animate({
-				top: '0px',
-				opacity: 1
-			});
-            $('header').removeClass('nav-up').addClass('nav-down');
-	        $('.m-header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    lastScrollTop = st;
-} */
-
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').animate({
-			top: '-60px',
-			opacity: 0
-		});
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-        $('header').animate({
-			top: '0px',
-			opacity: 1
-		});
-        }
-    }
-    lastScrollTop = st;
-}
-
 $(document).ready(function(){
 
     /* HEADER ALARM */
@@ -342,6 +249,28 @@ $(document).ready(function(){
         });
         $(window).resize();
     });
+
+	/*  Header scroll down */
+	var iScrollPos = 0;
+	$(window).scroll(function () {
+	    var iCurScrollPos = $(this).scrollTop();
+	    if (iCurScrollPos > iScrollPos) {
+	        //Scrolling Down
+		        console.log('Scroll down');
+		 	   $('header').animate({
+		 		   top: '-60px',
+		 		   opacity: 0
+		 	   });
+	    } else {
+	       //Scrolling Up
+	           console.log('Scroll up');
+	     	  $('header').animate({
+	     		  top: '0px',
+	     		  opacity: 1
+	     	  });
+	    }
+	    iScrollPos = iCurScrollPos;
+	});
 
 	/* 새 프로젝트 만들기 FAB */
 	window.onscroll = function() {
