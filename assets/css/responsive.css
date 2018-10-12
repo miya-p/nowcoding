@@ -1,6 +1,5 @@
 .project_view.mob {display: block; width:100%; max-width: 980px; margin: 0 auto; background: #fff;}
 .project_view.mob::after {content: ""; display: block; clear: both;}
-
 .project_view.mob .left {float: left; width:600px;}
 .project_view.mob .right {float: right; width:380px; }
 
@@ -49,7 +48,6 @@
 
 }
 
-
 @media (max-width:979px){
 
     /* 프로젝트 view */
@@ -63,7 +61,6 @@
     .mypArea .container {width:calc(100% - 240px);}
 
 }
-
 
 @media (max-width:767px){
 
@@ -149,12 +146,5 @@
     .curr_list.row4 li {width:100% !important;}
     .curr_list.row4 li:nth-child(2n),
     .curr_list.row4 li:nth-child(3n) {margin: 0 auto 25px; }
-
-}
-
-@media (max-height:540px){
-
-    /* Login */
-
 
 }

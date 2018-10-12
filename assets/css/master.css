@@ -56,59 +56,9 @@ textarea:focus, input:focus, button:focus  {outline: none;}
 .bdl_0{border-left:none !important;}
 .bdr_0{border-right:none !important;}
 
-
-.w200 {width:200px !important;}
-.w220 {width:220px !important;}
-.w240 {width:240px !important;}
-.w250 {width:250px !important;}
-.w260 {width:260px !important;}
-.w270 {width:270px !important;}
-.w280 {width:280px !important;}
-
 /* font Setting */
 .fb{font-weight:bold !important;}
 .fn{font-weight:normal !important}
-
-/* color ���� */
-.fc0{color:#fff;}
-.fc1{color:#04045f}
-.fc2{color:#06f}
-.fc3{color:#555;}
-.fc4{color:#b8000e;}
-
-
-.let1{letter-spacing:1px}
-.let2{letter-spacing:2px}
-.let3{letter-spacing:3px}
-.let4{letter-spacing:4px}
-.let5{letter-spacing:5px}
-.let_1{letter-spacing:-1px}
-.let_2{letter-spacing:-2px}
-.let_3{letter-spacing:-3px}
-.let_4{letter-spacing:-4px}
-.let_5{letter-spacing:-5px}
-
-.lh12 th, .lh12 td, .lh12 dt, .lh12 dd, .lh12 li, .lh12{line-height:12px !important;}
-.lh14 th, .lh14 td, .lh14 dt, .lh14 dd, .lh14 li, .lh14{line-height:14px !important;}
-.lh16 th, .lh16 td, .lh16 dt, .lh16 dd, .lh16 li, .lh16{line-height:16px !important;}
-.lh18 th, .lh18 td, .lh18 dt, .lh18 dd, .lh18 li, .lh18{line-height:18px !important;}
-.lh20 th, .lh20 td, .lh20 dt, .lh20 dd, .lh20 li, .lh20{line-height:20px !important;}
-.lh22 th, .lh22 td, .lh22 dt, .lh22 dd, .lh22 li, .lh22{line-height:22px !important;}
-.lh24 th, .lh24 td, .lh24 dt, .lh24 dd, .lh24 li, .lh24{line-height:24px !important;}
-.lh26 th, .lh26 td, .lh26 dt, .lh26 dd, .lh26 li, .lh26{line-height:26px !important;}
-.lh28 th, .lh28 td, .lh28 dt, .lh28 dd, .lh28 li, .lh28{line-height:28px !important;}
-.lh30 th, .lh30 td, .lh30 dt, .lh30 dd, .lh30 li, .lh30{line-height:30px !important;}
-
-
-.fs11{font-size:11px !important;}
-.fs12{font-size:12px !important;}
-.fs13{font-size:13px !important;}
-.fs14{font-size:14px !important;}
-.fs16{font-size:16px !important;}
-.fs18{font-size:18px !important;}
-.fs20{font-size:20px !important;}
-.fs22{font-size:22px !important;}
-
 
 /* margin */
 .m0{margin:0 !important;}
