@@ -29,13 +29,14 @@
     header .util .memlog.out:before {content: "로그인"; display: inline-block; height:28px; line-height: 28px; border-radius: 3px; background: rgba(255,255,255,.3); color:#fff; width:56px; text-align: center; font-size:13px;}
 
     .pop-wp form dl,
+    .loginArea.step1 .line,
     .loginArea.step1 ul.loginOther li {width: 80%;}
 
     /* 프로젝트 */
     .curr_list.row4 li {width:calc(33.3334% - 19px) !important;}
     .curr_list.row4 li:nth-child(4n) {margin: 0 25px 25px 0; }
     .curr_list.row4 li:nth-child(3n) {margin: 0 0px 25px 0; }
-    
+
     .curr_list.row3 > ul > li {width:calc(50% - 12.5px); margin: 0 25px 25px 0;}
     .curr_list.row3 > ul > li:nth-child(2n) {margin: 0 0 25px 0;}
     .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 25px 25px 0;}
