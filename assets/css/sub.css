@@ -163,13 +163,14 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 .project_view .writer dl::after {content: ''; display: block; clear: both;}
 .project_view .content {padding: 40px 40px 0}
 .project_view .content strong {display: block; color:#222; font-size:20px; line-height: 24px; text-align: justify;}
-.project_view .content p {font-size: 14px; line-height: 1.6; margin: 40px 0; text-align: justify; max-height:400px; overflow-y: auto;}
+.project_view .content p {font-size: 14px; line-height: 1.6; margin: 40px 0; text-align: justify; max-height:385px; overflow-y: auto;}
 .project_view .content time {display: block; font-size:12px; color:#aaa; margin: 10px 0}
 .project_view .content .util {float: right;}
 .project_view .content .util::after {content: ''; display: block; clear: both;}
 .project_view .content .tag {margin: 25px 0 0}
 .project_view .content .tag span {display: inline-block; padding: 0 16px; border-radius: 16px; background: #eee; height: 30px; line-height: 30px}
-.project_view .right .btnLike {position: absolute;}
+.project_view .right .btnLike {margin: 60px 0 0;}
+.project_view .right .btnLike button {margin: 0 auto; display: block; width:88px; height:84px; text-indent:-9999px; overflow: hidden; background: url('../img/btn_like.png') no-repeat; background-size:cover;}
 
 #fab-wp {width: 160px; height:70px;position: fixed; right:35px; bottom:35px; z-index: 3;}
 .fab {float: right; width:70px; height:70px; line-height: 70px; text-align: center; border-radius: 50%; overflow:hidden; display: block; background: #666;  background: #8658e4; /* Old browsers */

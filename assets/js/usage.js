@@ -291,6 +291,7 @@ $(document).ready(function(){
 	    } else if (st <= 65){
 			// 최상단에 닿았을 때
 			console.log('sdlfkjs');
+			$('body.sub header').removeClass('nav-down', 5000);
 			$('body.main header').removeClass('nav-down', 5000);
 	    } else {
 	        // Scroll Up

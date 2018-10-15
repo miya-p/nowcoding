@@ -100,8 +100,9 @@
     .project_view.mob .right {float: none; width:100%; }
     .project_view.mob .reply .list_reply {height:315px;;}
     .project_view.mob .content {padding: 40px 20px;}
-    .project_view.mob .content p {max-height:180px;}
+    .project_view.mob .content p {max-height:165px;}
     .project_view.mob .reply {padding: 35px 20px 0;}
+    .project_view.mob .right .btnLike {margin: 0px 0 60px;}
 
     /* Settings */
     .inner_s {width:calc(100% - 40px); margin: 0 20px;}
