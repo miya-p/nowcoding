@@ -1,13 +1,15 @@
 
 @charset "utf-8";
-@font-face {font-family:SPQ; font-weight:400; src:url('font/SpoqaR.eot'); src:url('font/SpoqaR.eot?#iefix') format('embeded-opentype'), url('font/SpoqaR.woff') format('woff');}
-@font-face {font-family:SPQ; font-weight:700; src:url('font/SpoqaB.eot'); src:url('font/SpoqaB.eot?#iefix') format('embeded-opentype'), url('font/SpoqaB.woff') format('woff');}
-@font-face {font-family:Lato; font-weight:100; src:url('font/LatoH.eot'); src:url('font/LatoH.eot?#iefix') format('embeded-opentype'), url('font/LatoH.woff') format('woff');}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* @font-face {font-family:'NanumSquare'; font-weight:400; src:url('font/SpoqaR.eot'); src:url('font/SpoqaR.eot?#iefix') format('embeded-opentype'), url('font/SpoqaR.woff') format('woff');}
+@font-face {font-family:'NanumSquare'; font-weight:700; src:url('font/SpoqaB.eot'); src:url('font/SpoqaB.eot?#iefix') format('embeded-opentype'), url('font/SpoqaB.woff') format('woff');}
+@font-face {font-family:Lato; font-weight:100; src:url('font/LatoH.eot'); src:url('font/LatoH.eot?#iefix') format('embeded-opentype'), url('font/LatoH.woff') format('woff');}*/
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:800');
 
 /* base */
 *, *::before, *::after{box-sizing:inherit}
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding:0; margin:0; font-family:SPQ,Dotum,Helvetica,AppleGothic,sans-serif; color:#666;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding:0; margin:0; font-family:'NanumSquare',Dotum,Helvetica,AppleGothic,sans-serif; color:#666;}
 body{background-color:#fff;text-align:left;word-break:break-all;*word-break:break-all;-ms-word-break:break-all;overflow-x:hidden;}
 table {width:100%; border-collapse:collapse; border-spacing:0; table-layout:auto;}
 ol, ul, li{list-style:none;}
@@ -18,8 +20,8 @@ legend{position:absolute !important; top:-9999px !important; width:1px !importan
 hr, caption{display:none;}
 input,select,button{vertical-align:middle;box-sizing: border-box;}
 button{overflow:visible; margin:0; padding:0; border:0 none; background:transparent; cursor:pointer;}
-body, tr, th, td, p, dt, dd, li, a, input{font:14px/120% 'SPQ'; color:#666;  vertical-align:middle;}
-input, textarea {font:14px 'SPQ'; vertical-align:middle;}
+body, tr, th, td, p, dt, dd, li, a, input{font:14px/120% ''NanumSquare''; color:#666;  vertical-align:middle;}
+input, textarea {font:14px ''NanumSquare''; vertical-align:middle;}
 i, em, address{font-style:normal}
 object, embed{margin:0;padding:0; font-size:0}
 a:link, a:visited, a:active,a:hover {text-decoration:none;}
@@ -451,7 +453,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb5aa1', end
 .btnArea {text-align: center; margin: 40px 0 0;}
 .btnArea a {display: inline-block; position: relative; border-radius: 22px; background: #7850f5; text-align: center; padding: 8px 52px 8px 30px; transition: all .3s;}
 .btnArea a::after {content: ""; display: block;clear: both;}
-.btnArea a span {float: left; position: relative; color: #fff; text-transform: uppercase; font-family: "Montserrat", "SPQ"; font-weight: 600; display: inline-block;height: 28px;line-height: 28px; margin: 0}
+.btnArea a span {float: left; position: relative; color: #fff; text-transform: uppercase; font-family: "Montserrat", "'NanumSquare'"; font-weight: 600; display: inline-block;height: 28px;line-height: 28px; margin: 0}
 .btnArea a i {float: left; position: absolute; color:#fff;}
 .btnArea a:hover {-webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);
 -moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);
