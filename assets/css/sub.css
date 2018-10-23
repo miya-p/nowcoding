@@ -93,8 +93,8 @@ section > .title {height:auto; padding: 75px 0 55px; width:100%;}
 section > .title h2 {color:#fff; font-size:40px; text-align: center; height: 45px; line-height: 45px; margin-bottom: 15px; font-weight: 800;}
 section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 auto; max-width:1280px; width:80%; font-size:18px;}
 
-.search_prj {width:80%; max-width:1280px; height:60px; background:#fff; margin: 40px auto 0;}
-.search_prj input[type=text] {background: transparent; border:0px ; text-align: center; width:calc(100% - 50px); height:60px; line-height: 60px; font-size:16px;}
+.search_prj {width:calc(100% - 40px); max-width:1280px; height:60px; background:#fff; margin: 40px auto 0;}
+.search_prj input[type=text] {background: transparent; border:0px ; text-align: left; width:calc(100% - 85px); margin-left: 25px; height:60px; line-height: 60px; font-size:16px;}
 .search_prj button i {font-size:26px; color:#5850e7;}
 
 .curriculum {background: #f5f6fa;}
@@ -108,7 +108,7 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 
 .curriculum .list ul li dl dt strong { font-weight: 800; font-size:26px;line-height: 40px; color:#222;}
 .curriculum .list ul li dl dt p {font-size:14px; line-height: 1.5; color:#aaa; margin: 22px 0 40px;}
-.curriculum .list ul li dl dt a.btnGreen { font-size:13px; color:#50c68c; display: inline-block; text-align: center;width:105px; height:36px; line-height: 36px; background: #edf9f4; font-family: 'Montserrat'; font-weight:600; letter-spacing:.04em;}
+.curriculum .list ul li dl dt a.btnGreen { font-size:15px; color:#fff; display: inline-block; text-align: center;width:105px; height:42px; line-height: 42px; background: #50c68c; border-radius:5px; font-family: 'Montserrat'; font-weight:600; letter-spacing:.04em;}
 
 .project .inner,
 .curriculum .inner {padding: 50px 0 120px}
@@ -121,7 +121,7 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 
 .project_view .left {float: left; width:600px;}
 .project_view .block {position: relative; height:600px; background:#394149;}
-.project_view .block ul {border-radius:4px; border:1px solid #ddd; background: #fff; position: absolute; width:40px; margin: 30px 0 0 30px}
+.project_view .block ul {border-radius:4px; border:1px solid #ddd; background: #fff; position: absolute; width:40px; margin: 30px 0 0 30px; overflow: hidden;}
 .project_view .block ul li {border-bottom:1px solid #eee;}
 .project_view .block ul li:last-child {border:0px;}
 .project_view .block ul li.active {background: #4d86ec; }

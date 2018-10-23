@@ -12,8 +12,8 @@
     /* 수업 */
     .curriculum .list ul li dl {background: #fff;}
     .curriculum .list ul li dl dd {width:60%; overflow:hidden; position: relative;}
-    .curriculum .list ul li dl dd img {height:100%; position: relative; left:50%; margin-left: -65%; }
-    .curriculum .list ul li:nth-child(even) dl dd {margin-left: 0px;}
+    .curriculum .list ul li dl dd img {height:100%; position: relative; left:50%; margin-left: -65%; display: block;}
+    .curriculum .list ul li:nth-child(even) dl dd {margin-left: 0px; text-align: center;}
     .curriculum .list ul li dl dt {width:40%; margin-top: 0px; margin-left: 0px; padding:40px; height:auto;}
 
     /* 마이페이지 */
