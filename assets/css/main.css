@@ -30,16 +30,16 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 .specArea ul li:nth-child(3)::before {content: "3"}
 
 /* Explore Courses */
-.expArea .course {position: relative;}
-.expArea .course::after {content: ""; display: block; float: none;}
-.expArea .courseImg {background-image: url("../img/course101.png"); height: 600px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: cover;}
-.expArea .course .spec {position: absolute; top:80px; width: 400px; height: 360px; left:50%; margin-left: 160px; background: #fff;padding: 40px;}
-.expArea .course .spec > span {display: inline-block; width: 46px; height: 51px; line-height: 51px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;}
-.expArea .course .spec h3 {font-size:30px; color:#333; height: auto;line-height: 120%; margin-bottom: 20px}
-.expArea .course .spec p {line-height: 140%; color:#aaa;}
-.expArea .course a {background: #ffcc33;}
-.expArea .course a span,
-.expArea .course a i {color: #222;}
+.expArea .courseArea {height:400px;}
+.expArea .courseArea::after {content: ""; display: block; float: none;}
+.expArea .courseArea .box {float: left; width:100vw; background-image: url("../img/course101.png"); height: 400px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: 100%;}
+.expArea .courseArea .course .spec {position: absolute; top:80px; width: 400px; height: 360px; left:50%; margin-left: 160px; background: #fff;padding: 40px;}
+.expArea .courseArea .course .spec > span {display: inline-block; width: 46px; height: 51px; line-height: 51px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;}
+.expArea .courseArea .course .spec h3 {font-size:30px; color:#333; height: auto;line-height: 120%; margin-bottom: 20px}
+.expArea .courseArea .course .spec p {line-height: 140%; color:#aaa;}
+.expArea .courseArea .course a {background: #ffcc33;}
+.expArea .courseArea .course a span,
+.expArea .courseArea .course a i {color: #222;}
 
 /* Project */
 .prjArea {text-align: center;}
