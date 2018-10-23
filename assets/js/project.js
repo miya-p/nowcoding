@@ -1,11 +1,10 @@
 	/*  Project 모바일 대응  */
 $(document).ready(function(){
 
-    /* PROJECT view	*/
+    /* PROJECT view	
     var viewPrj = $(".origin, .btn_viewPrj");
     var viewPrjContent = $(".popupBg.projectArea, .project_view.web");
 
-	/*  Mobile Navigation  */
     var delay = (function(){
         var timer = 0;
         return function(callback, ms){

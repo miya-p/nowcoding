@@ -1,10 +1,34 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+@font-face {
+  font-family: 'NBG';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumBarunGothic.eot);
+  src: local('Nanum Barun Gothic'),
+       local('NanumBarunGothic'),
+       url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumBarunGothic.woff2) format('woff2'),
+       url(font/NanumBarunGothic.woff) format('woff'),
+       url(font/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NBG';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumBarunGothicBold.eot);
+  src: local('Nanum Barun Gothic Bold'),
+       local('NanumBarunGothicBold'),
+       url(font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumBarunGothicBold.woff2) format('woff2'),
+       url(font/NanumBarunGothicBold.woff) format('woff'),
+       url(font/NanumBarunGothicBold.ttf) format('truetype');
+}
 
 /* base */
 *, *::before, *::after{box-sizing:inherit}
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding:0; margin:0; font-family:'NanumSquare',Dotum,Helvetica,AppleGothic,sans-serif; color:#666;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding:0; margin:0; font-family:'NBG',Dotum,Helvetica,AppleGothic,sans-serif; color:#666; font-size:14px; font-weight:400;}
 body{background-color:#fff;text-align:left;word-break:break-all;*word-break:break-all;-ms-word-break:break-all;overflow-x:hidden;}
 table {width:100%; border-collapse:collapse; border-spacing:0; table-layout:auto;}
 ol, ul, li{list-style:none;}
@@ -15,8 +39,8 @@ legend{position:absolute !important; top:-9999px !important; width:1px !importan
 hr, caption{display:none;}
 input,select,button{vertical-align:middle;box-sizing: border-box;}
 button{overflow:visible; margin:0; padding:0; border:0 none; background:transparent; cursor:pointer;}
-body, tr, th, td, p, dt, dd, li, a, input{font:14px/120% ''NanumSquare''; color:#666;  vertical-align:middle;}
-input, textarea {font:14px ''NanumSquare''; vertical-align:middle;}
+body, tr, th, td, p, dt, dd, li, a, input{font:14px/120% 'NBG'; color:#666; vertical-align:middle;}
+input, textarea {font:14px 'NBG'; vertical-align:middle;}
 i, em, address{font-style:normal}
 object, embed{margin:0;padding:0; font-size:0}
 a:link, a:visited, a:active,a:hover {text-decoration:none;}
@@ -77,12 +101,12 @@ header .util > ul > li i {color:#fff; font-size:1.8rem;}
 header .util .memlog.out {cursor:pointer;}
 header .util .memlog span.myprofile {display: inline-block; width: 30px; height: 30px; margin-right: 10px; border-radius: 50%; overflow: hidden; float: left}
 header .util .memlog span.myprofile img {display: block; width: 100%;}
-header .util .memlog strong {display: inline-block; line-height: 30px; color:#fff;}
+header .util .memlog strong {display: inline-block; line-height: 30px; color:#fff; font-size: 13px; font-weight: 400;}
 header .util .memlog strong a {color:#fff;}
 header .util .memlog::after {content: ""; display: block; clear: both;}
 
     .tooltip-bg {background: rgba(0,0,0,.0); width:100vw;  top:0; bottom:0; left:0; right:0; overflow:hidden; position: absolute; z-index: 2; display: none;}
-    .tooltip.alarm {position: absolute; z-index: 3; width:340px; height:290px; margin-left: -163px; margin-top: 20px; z-index:10;}
+    .tooltip.alarm {position: absolute; width:340px; height:290px; margin-left: -163px; margin-top: 20px; z-index:10;}
     .tooltip.alarm::after {content: ''; display: inline-block; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #fff; position: absolute; top:-7px; left:170px; z-index: 3; }
     .tooltip.alarm .tooltipArea {background: #fff; width:100%; height:320px; position: relative; overflow:hidden; border-radius: 6px; -webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);-moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2); box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 
@@ -125,14 +149,14 @@ footer h1 a {width: 140px; height: 47px; display: block; text-indent: -999px; ov
 footer .info {float: left; width: calc(100% - 180px);}
 footer .info .gnb {}
 footer .info .gnb ul li {float: left; padding: 0 20px 0 0}
-footer .info .gnb ul li a {font-size:14px; color:#fff; font-weight: 100;}
-footer .info .gnb ul li:first-child a {font-weight: 800;}
+footer .info .gnb ul li a {font-size:13px; color:#fff; font-weight: 400;}
+footer .info .gnb ul li:first-child {}
 footer .info .gnb::after {content: ""; display: block; clear: both;}
-footer .info .address {color:#fff; margin-top: 17px; line-height: 160%; opacity:.7;}
-footer .info .address a {color:#fff; display: inline-block; transition:all .3s; padding: 0 3px}
+footer .info .address {color:#fff; margin-top: 17px; line-height: 160%; opacity:.7; font-size:12px;}
+footer .info .address a {color:#fff; display: inline-block; transition:all .3s; padding: 0 3px; font-size:12px;}
 footer .info .address a:hover {background: #fff; color:#222;}
 footer .info .address small {display: block; opacity: .3;}
-footer .info .address span {display: inline-block; width: 1px; height: 12px; background: #fff; margin: 0 12px}
+footer .info .address span {display: inline-block; position: relative; top:2px;width: 1px; height: 12px; background: #666; margin: 0 8px}
 
 /* 팝업 */
 .popupBg {display: none; position:fixed; width: 100%; height: 100vh; background:rgba(0,0,0,.5); z-index: 111}
@@ -148,14 +172,12 @@ footer .info .address span {display: inline-block; width: 1px; height: 12px; bac
 .pop-wp form input[type='number'],
 .pop-wp form input[type='email'] {width: 100%;border:1px solid #ddd; height: 45px; padding: 0 0 0 15px}
 .pop-wp.joinArea form textarea {font-size: 12px; border:1px solid #ddd; width:100%; height:225px; padding: 15px; box-sizing: border-box; margin: 15px 0 0}
-
 .pop-wp form input[type='text'].wrong,
 .pop-wp form input[type='password'].wrong {border:1px solid #ff4d4e;}
 .pop-wp form input[type='text'].wrong + small,
 .pop-wp form input[type='password'].wrong + small {color:#ff4d4e;display: block; font-size:12px ;margin: 0px 0 0; line-height: 28px}
 .pop-wp form input[type='text'].wrong + small i,
 .pop-wp form input[type='password'].wrong + small i {font-size:16px; margin: 3px 3px 0 0; position: relative; top:2px;}
-
 .pop-wp form dl {width:60%; margin: 0 auto;}
 .pop-wp form dl dd {margin: 0 0 15px}
 .pop-wp form dl dt {padding: 10px 0 0;}
@@ -280,7 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb5aa1', end
 .btnArea {text-align: center; margin: 40px 0 0;}
 .btnArea a {display: inline-block; position: relative; border-radius: 22px; background: #7850f5; text-align: center; padding: 8px 52px 8px 30px; transition: all .3s;}
 .btnArea a::after {content: ""; display: block;clear: both;}
-.btnArea a span {float: left; position: relative; color: #fff; text-transform: uppercase; font-family: "Montserrat", "'NanumSquare'"; font-weight: 600; display: inline-block;height: 28px;line-height: 28px; margin: 0}
+.btnArea a span {float: left; position: relative; color: #fff; text-transform: uppercase; font-family: "Montserrat", 'NBG'; font-weight: 600; display: inline-block;height: 28px;line-height: 28px; margin: 0}
 .btnArea a i {float: left; position: absolute; color:#fff;}
 .btnArea a:hover {-webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);
 -moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);

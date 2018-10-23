@@ -63,7 +63,7 @@ figure img.transparent {width: 100%; position: relative;}
 .groupArea dd {float: left; position: relative; margin-left: -10px}
 .groupArea dd a {display: block; width:43px; height: 43px; border-radius: 50%; overflow: hidden}
 .groupArea dd a img {width: 100%; }
-.groupArea dt {float: left; background: #4c84ff; border-radius: 0 10px 10px 0; padding: 0 10px 4px 8px; height: 20px; margin:12px 0 0 -2px}
+.groupArea dt {float: left; background: #4c84ff; border-radius: 0 10px 10px 0; padding: 3px 10px 4px 8px; height: 20px; margin:12px 0 0 -2px}
 .groupArea dt a {color:#fff; font-size: 12px;}
 
 .settings .box table th {text-align: right; width:100px; padding: 15px 0}
@@ -90,7 +90,7 @@ figure img.transparent {width: 100%; position: relative;}
 .settings .user_inactive a:hover {border-bottom:1px dashed rgba(140, 147, 165, 1);}
 
 section > .title {height:auto; padding: 75px 0 55px; width:100%;}
-section > .title h2 {color:#fff; font-size:40px; text-align: center; height: 45px; line-height: 45px; margin-bottom: 15px; font-weight: 800;}
+section > .title h2 {color:#fff; font-size:40px; text-align: center; height: 45px; line-height: 45px; margin-bottom: 15px;}
 section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 auto; max-width:1280px; width:80%; font-size:18px;}
 
 .search_prj {width:calc(100% - 40px); max-width:1280px; height:60px; background:#fff; margin: 40px auto 0;}
@@ -189,7 +189,7 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .curr_list li .util {padding: 0px 20px 20px;}
 .curr_list li .util::after {content: ""; display: block; clear: both;}
 .curr_list li .util span {float: left; display: inline-block; height:30px; line-height: 30px; font-size:12px; color:#888; position: relative}
-.curr_list li .util span i {font-size:19px; float: left; position: relative; top:7px; padding-right: 4px}
+.curr_list li .util span i {font-size:19px; float: left; position: relative; top:4px; padding-right: 4px}
 .curr_list li .util span:first-child {margin-right: 20px;}
 .curr_list li .util span:last-child {float: right; font-size:25px; color:#ccc; transition:all .3s;}
 .curr_list li .util span:last-child:hover {color:#4d86ec;}
@@ -200,7 +200,6 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .csInfo {text-align: center;}
 .csInfo img {width:10%;}
 .csInfo p {width: 80%; margin: 0 auto; font-size: 16px; font-weight: 800; margin: 12px auto 0;}
-
 .csRequest table {margin: 50px auto 0; width:90%;}
 .csRequest table th {vertical-align: top; line-height: 40px; text-align: right; padding-right: 50px; min-width:120px;}
 .csRequest table td {padding: 0 0 10px;}
