@@ -21,7 +21,7 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 .specArea ul li:nth-child(2) dl dd {float: right;}
 .specArea ul li dl dt {width: 45%; margin-left: 5%}
 .specArea ul li dl dt strong {display: block; font-size: 36px; color:#111;height: auto; margin-bottom: 2rem; line-height: 140%; letter-spacing: -.04em}
-.specArea ul li dl dt p {line-height: 140%; width: 80%; margin: 0 0 3rem;}
+.specArea ul li dl dt p {line-height: 160%; width: 80%; margin: 0 0 3rem;}
 .specArea ul li dl dt .btnArea {text-align: left;}
 .specArea ul li dl dt a {background: #1050ff;}
 .specArea ul li::after {content: ""; display: block; clear: both;}
@@ -30,16 +30,35 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 .specArea ul li:nth-child(3)::before {content: "3"}
 
 /* Explore Courses */
-.expArea .courseArea {height:400px;}
+.expArea .courseArea {height:600px; position: relative;}
+.expArea .courseArea .slick-arrow {position: absolute; bottom:0px; height:60px; width:60px; overflow: hidden; display: inline-block; z-index:1001; text-indent: -999px; transition:all .3s; background: url('../img/ec_arrow.png') rgba(0,0,0,.5);}
 .expArea .courseArea::after {content: ""; display: block; float: none;}
-.expArea .courseArea .box {float: left; width:100vw; background-image: url("../img/course101.png"); height: 400px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;background-size: 100%;}
-.expArea .courseArea .course .spec {position: absolute; top:80px; width: 400px; height: 360px; left:50%; margin-left: 160px; background: #fff;padding: 40px;}
-.expArea .courseArea .course .spec > span {display: inline-block; width: 46px; height: 51px; line-height: 51px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;}
-.expArea .courseArea .course .spec h3 {font-size:30px; color:#333; height: auto;line-height: 120%; margin-bottom: 20px}
-.expArea .courseArea .course .spec p {line-height: 140%; color:#aaa;}
-.expArea .courseArea .course a {background: #ffcc33;}
-.expArea .courseArea .course a span,
-.expArea .courseArea .course a i {color: #222;}
+.expArea .courseArea .slick-arrow.slick-prev {border-right:1px solid #555;}
+.expArea .courseArea .slick-arrow.slick-next { background: url('../img/ec_arrow.png') 0 -60px rgba(0,0,0,.5); }
+@media all and (min-width:768px){
+	.expArea .courseArea .slick-arrow {left:calc(50% - 60px);}
+	.expArea .courseArea .slick-arrow.slick-prev {left:calc(50% - 120px);}
+}
+.expArea .courseArea .slick-list {height:600px; position: relative;}
+.expArea .courseArea .box {float: left; height:600px; width:100vw; position: absolute !important;}
+.expArea .courseArea .box .img {width:100%; min-height:600px; background: url('../img/course101.png') center; background-size: cover; background-attachment: fixed;}
+.expArea .courseArea .box .img.dd102 {background-size: 150%;}
+.expArea .courseArea .box .spec {background: #fff; position: absolute; bottom:0px; left:50%; width:50%;}
+.expArea .courseArea .box .spec .title {margin: 40px 40px 13px; height:45px;}
+.expArea .courseArea .box .spec .title span {float: left; width: 40px; height: 45px; line-height: 45px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;}
+.expArea .courseArea .box .spec .title h3 {float: left; font-size:24px; color:#333; height: 45px; line-height: 45px; display: inline-block; margin-left: 6px;}
+.expArea .courseArea .box .spec p {line-height: 140%; color:#aaa; margin: 10px 40px 0; text-align: justify;}
+.expArea .courseArea .box .btnArea {margin: 16px 40px 0;}
+.expArea .courseArea .box a {background: #ffcc33;}
+.expArea .courseArea .box a span,
+.expArea .courseArea .box a i {color: #222;}
+
+
+/* .expArea .courseArea .slick-dots {height:40px; text-align: center; margin-top: 10px;}
+.expArea .courseArea .slick-dots li {display: inline-block; width:30px; height:30px; line-height: 30px; text-align: center; margin-right: 7px; background: #ddd; cursor: pointer; border-radius:50%;}
+.expArea .courseArea .slick-dots li.slick-active {background: #ffcc33;}
+.expArea .courseArea .slick-dots li.slick-active:hover {background: #ffcc33;}
+.expArea .courseArea .slick-dots li:last-child {margin-right: 0px;} */
 
 /* Project */
 .prjArea {text-align: center;}
@@ -54,15 +73,8 @@ section.lscArea h2 br {display: none;}
 .lscArea .lsc {background: #222;height: 520px;}
 .lscArea .lsc .inner {position: relative; z-index:4;}
 .lscArea .lsc p {text-align: center; font-size:20px; color:#fff; line-height: 140%}
-.lscArea .lsc a {display: block; text-align: center;width: 450px; height:85px; line-height: 85px; margin: 115px auto 0; font-size:26px; color:#fff; border-radius: 40px; transition: all .3s;
-background: #843cf6; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #843cf6 0%, #44a6f3 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #843cf6 0%,#44a6f3 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #843cf6 0%,#44a6f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#843cf6', endColorstr='#44a6f3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
-.lscArea .lsc a:hover {-webkit-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);
--moz-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);
-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
+.lscArea .lsc a {display: block; text-align: center;width: 450px; height:85px; line-height: 85px; margin: 115px auto 0; font-size:26px; color:#fff; border-radius: 40px; transition: all .3s; background: #843cf6; background: -moz-linear-gradient(-45deg, #843cf6 0%, #44a6f3 100%); background: -webkit-linear-gradient(-45deg, #843cf6 0%,#44a6f3 100%); background: linear-gradient(135deg, #843cf6 0%,#44a6f3 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#843cf6', endColorstr='#44a6f3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.lscArea .lsc a:hover {-webkit-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39); -moz-box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39); box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
 .lscArea .lsc .galaxy {position: relative;}
 .lscArea .lsc .galaxy img {position: absolute; left:50%; z-index:0;}
 .lscArea .lsc .galaxy .g01 {margin-top:-130px; left:70%;}
@@ -76,13 +88,10 @@ box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
 #waves {width: 100%; height: 120px; background-color: #fff; padding-top: 30px}
 
 @media all and (max-width:1279px){
-
 	.expArea .course .spec { width: 30%; margin-left: 10%;}
-
 }
 
 @media (max-width:1023px){
-
 	.visual {height:780px; background-size: cover;}
 	.visual .mainText {padding: 185px 0 0;}
 	.main section {margin: 100px 0 ;}
@@ -100,7 +109,6 @@ box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
 	.lscArea .lsc p br {display: none;}
 	.lscArea .lsc .galaxy .g03 {margin-left: -55%}
 	.lscArea .lsc .galaxy .g04 {left:-30%;}
-
 }
 
 @media (max-width:767px){
@@ -112,7 +120,6 @@ box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
 
 	.specArea ul li {padding: 35px 0 70px;}
 	.specArea ul li dl::before {display: none;}
-
 	.specArea ul li dl > *,
 	.specArea ul li:nth-child(2) dl dd {float: none;}
 	.specArea ul li:nth-child(2) dl dd svg,
@@ -138,10 +145,10 @@ box-shadow: 10px 6px 25px 4px rgba(0,0,0,0.39);}
 	.prjArea ul li {width:calc(25% - 2px);}
 	.prjArea ul li:nth-child(n+17) {display: none;}
 
-}
-
-@media (max-width:639px){
-
+	.expArea .courseArea .box .spec {width:calc(100% - 40px); margin: 0 20px; left:0;}
+	.expArea .courseArea .slick-arrow {top:250px;}
+	.expArea .courseArea .slick-arrow.slick-prev {left:20px;}
+	.expArea .courseArea .slick-arrow.slick-next {right:20px;}
 }
 
 @media (max-width:468px){

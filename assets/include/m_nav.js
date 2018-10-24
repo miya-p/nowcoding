@@ -22,7 +22,7 @@ document.write(
 + '         </div>'
 + '        <div class="profile">'
 + '            <figure>'
-+ '                <div id="character"><span class="level purple">Lv.5</span><a href="#"><img src="../assets/img/img_sample.png" alt=""></a></div>'
++ '                <div id="character"><span class="level purple">Lv.5</span><a href="#"><img src="/nowcoding/assets/img/img_sample.png" alt=""></a></div>'
 + '            </figure>'
 + '            <div class="feature_id">'
 + '                <strong>mihaim0980</strong>'
