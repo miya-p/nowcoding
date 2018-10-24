@@ -27,7 +27,7 @@ document.write(
 + '                                 <ul>'
 + '                                     <li>'
 + '                                         <div class="chr">'
-+ '                                             <span><img src="/nowcoding"/assets/img/img_sample.png" alt=""></span>'
++ '                                             <span><img src="/nowcoding/assets/img/img_sample.png" alt=""></span>'
 + '                                         </div>'
 + '                                         <div class="content">'
 + '                                             <span>dkosdf</span>님이 회원님을 팔로우하기 시작했습니다. <time>11:20</time>'

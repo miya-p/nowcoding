@@ -227,17 +227,17 @@ $(document).ready(function(){
 	        return;
 	    if (st > lastScrollTop && st > navbarHeight){
 	        // Scroll Down
-	        $('body.main header').removeClass('nav-down').addClass('nav-up');
+	        $('body.main header').removeClass('nav-down').removeClass('nav-top').addClass('nav-up');
 			$('body.sub header').removeClass('nav-down').addClass('nav-up');
 	    } else if (st <= 65){
 			// 최상단
 			console.log('TOPTOPTOPTOP');
-			$('body.sub header').removeClass('nav-up', 100);
-			$('body.main header').removeClass('nav-down', 100).removeClass('nav-up', 100);
+			$('body.main header').removeClass('nav-up').addClass('nav-top');
+			$('body.sub header').removeClass('nav-up');
 	    } else {
 	        // Scroll Up
 	        if(st + $(window).height() < $(document).height()) {
-		        $('body.main header').addClass('nav-down').removeClass('nav-up');
+		        $('body.main header').addClass('nav-down').removeClass('nav-up', 'nav-top');
 			    $('body.sub header').addClass('nav-down').removeClass('nav-up');
 	        }
 	    }
