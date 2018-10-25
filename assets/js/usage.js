@@ -204,7 +204,7 @@ $(document).ready(function(){
         $(window).resize();
     });
 
-	/*  Header scroll down */
+	/*  Header scroll down  */
 	var didScroll;
 	var lastScrollTop = 0;
 	var delta = 5;
@@ -223,17 +223,43 @@ $(document).ready(function(){
 
 	function hasScrolled() {
 	    var st = $(this).scrollTop();
+		var st2 = $(this).scrollTop() + 65;
+		console.log(st, st2);
 	    if(Math.abs(lastScrollTop - st) <= delta)
 	        return;
-	    if (st > lastScrollTop && st > navbarHeight){
+	    if (st > lastScrollTop){
 	        // Scroll Down
-	        $('body.main header').removeClass('nav-down').removeClass('nav-top').addClass('nav-up');
+	        $('body.main header').removeClass('nav-down').addClass('nav-up');
 			$('body.sub header').removeClass('nav-down').addClass('nav-up');
 	    } else if (st <= 65){
 			// 최상단
 			console.log('TOPTOPTOPTOP');
-			$('body.main header').removeClass('nav-up').addClass('nav-top');
-			$('body.sub header').removeClass('nav-up');
+			$('body.main header').removeClass('nav-up nav-down');
+			$('body.sub header').removeClass('nav-up nav-down');
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+		        $('body.main header').addClass('nav-down').removeClass('nav-up');
+			    $('body.sub header').addClass('nav-down').removeClass('nav-up');
+	        }
+	    }
+	    lastScrollTop = st;
+	}
+
+	/*
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+	    if (st > lastScrollTop && st > navbarHeight){
+	        // Scroll Down
+	        $('body.main header').removeClass('nav-down').addClass('nav-up');
+			$('body.sub header').removeClass('nav-down').addClass('nav-up');
+	    } else if (st <= 65){
+			// 최상단
+			console.log('TOPTOPTOPTOP');
+			$('body.main header').removeClass('nav-down');
+			$('body.sub header').removeClass('nav-down');
 	    } else {
 	        // Scroll Up
 	        if(st + $(window).height() < $(document).height()) {
@@ -242,5 +268,5 @@ $(document).ready(function(){
 	        }
 	    }
 	    lastScrollTop = st;
-	}
+	}*/
 });
