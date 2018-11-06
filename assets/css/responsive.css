@@ -22,8 +22,8 @@
 }
 
 @media (max-width:1023px){
+    
     header nav {margin-left: 10%}
-
     .pop-wp form dl,
     .loginArea.step1 .line,
     .loginArea.step1 ul.loginOther li {width: 80%;}
@@ -62,10 +62,10 @@
 @media (max-width:767px){
 
     .login .container {margin: 30px auto 60px;}
-    .login-wp {width:60%;}
-    .login-wp form dl,
-    .login-wp.step1 ul.loginOther li,
-    .login-wp.step1 .line {width: 100%; max-width:320px;}
+    .loginArea {width:60%;}
+    .loginArea form dl,
+    .loginArea.step1 ul.loginOther li,
+    .loginArea.step1 .line {width: 100%; max-width:320px;}
 
     header {display: none;}
     .header-wrap {height: 60px;}

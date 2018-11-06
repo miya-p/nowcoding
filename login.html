@@ -13,6 +13,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/usage.js"></script>
+    <script src="assets/js/form.js"></script>
 
     <link rel="stylesheet" href="assets/css/master.css">
     <link rel="stylesheet" href="assets/css/sub.css">
@@ -30,21 +31,21 @@
         </div>
 
         <svg class="hero__background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1000" width="500" height="1000" preserveAspectRatio="none">
-              <defs>
-                  <linearGradient id="Gradient1">
+            <defs>
+                <linearGradient id="Gradient1">
                     <stop class="stop1" offset="0%"/>
                     <stop class="stop3" offset="100%"/>
-                  </linearGradient>
-                  <style type="text/css">
+                </linearGradient>
+                <style type="text/css">
                     .stop1 { stop-color: #cc5aa4; }
                     .stop3 { stop-color: #544ae4; }
-                  </style>
-              </defs>
+                </style>
+            </defs>
             <path class="hero__wobble" d="M0 0 C 250 0, 500 0, 500 0 C 500 250, 500 500, 500 500 C 250 500, 0 500, 0 500 C 0 250, 0 500, 0 0 Z"  fill="url(#Gradient1)"></path>
         </svg>
 
         <div class="container">
-            <div class="login-wp step1">
+            <div class="__member loginArea step1">
                 <form class="" action="index.html" method="post">
                     <dl class="">
                         <dd><input type="text" name="log_id" value="" placeholder="아이디" required></dd>
@@ -59,7 +60,7 @@
                         <dd class="util">
                             <a href="#" class="btnfindid">아이디 찾기</a><span>&bull;</span>
                             <a href="#" class="btnfindpw">비밀번호 찾기</a>
-                            <a href="#" class="btnjoin">회원가입</a>
+                            <a href="join.html">회원가입</a>
                         </dd>
                     </dl>
                 </form>
