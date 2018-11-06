@@ -12,7 +12,7 @@ document.write(
 + '            </ul>'
 + '        </div>'
 + '        <div class="address">'
-+ '            (주) 레슨어블 Lessonable Co., Ltd. <br>03142 서울특별시 종로구 종로1길 50, 4층 135호 (더케이트윈타워 B동) <span></span>사업자등록번호 355-87-00804 <span></span> 개인정보관리책임자 홍길동'
++ '            (주) 레슨어블 Lessonable Co., Ltd. <br>03142 서울특별시 종로구 종로1길 50, 4층 135호 (더케이트윈타워 B동) <span></span>사업자등록번호 355-87-00804 <span></span> 개인정보관리책임자 허준'
 + '            <br>02-777-7909  <span></span> <a href=mailto:"upport@lessonable.co.kr">support@lessonable.co.kr</a>'
 + '            <small>Lessonable Co., Ltd. all rights reserved.</small>'
 + '        </div>'

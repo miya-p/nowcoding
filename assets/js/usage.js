@@ -182,34 +182,37 @@ $(document).ready(function(){
                     $(".m-nav").css({right: "-300px"});
                     $("body").removeClass("fix");
                 } else if ( width <= 767 ) {
-                    $(".m-nav-bg").click(function(){
-						$(".m-nav").animate({right: "-300px"}, 0);
-						$(".m-nav").animate({right: "-300px"}, 0);
-						$(".m-nav").animate({right: "-300px"}, 0);
-						$(".m-nav").animate({right: "-300px"}, 0);
-                        $(this).css({display: "none"});
-                        // $("body").removeClass("fix");
-						$("#character svg").remove();
-                    });
-                    $("#btnNav").click(function(){
-                        $(".m-nav-bg").css({display: "block"});
-                        $(".m-nav").animate({right: "0px"}, 200);
-                        // $("body").addClass("fix");
-						const myChart = $("#character").delay(5000).donutty({
-							min: -100,
-							max: 100,
-							value: 50,
-							radius:60,
-							padding: 0,
-							color: "rgba(120, 107, 230, .6)",
-							bg: "rgba(230, 236, 243, 1)"
-						});
-                    });
                 }
             }, pause);
         });
         $(window).resize();
     });
+
+
+	$(".m-nav-bg").click(function(){
+		$(".m-nav").animate({right: "-300px"}, 0);
+		$(".m-nav").animate({right: "-300px"}, 0);
+		$(".m-nav").animate({right: "-300px"}, 0);
+		$(".m-nav").animate({right: "-300px"}, 0);
+		$(this).css({display: "none"});
+		// $("body").removeClass("fix");
+		$("#character svg").remove();
+	});
+	$("#btnNav").click(function(){
+		$(".m-nav-bg").css({display: "block"});
+		$(".m-nav").animate({right: "0px"}, 200);
+		// $("body").addClass("fix");
+		const myChart = $("#character").delay(5000).donutty({
+			min: -100,
+			max: 100,
+			value: 50,
+			radius:60,
+			padding: 0,
+			color: "rgba(120, 107, 230, .6)",
+			bg: "rgba(230, 236, 243, 1)"
+		});
+	});
+
 
 	/*  Header scroll down  */
 	var didScroll;

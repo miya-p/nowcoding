@@ -110,7 +110,7 @@ header .util .memlog.out a {color:#fff;font-size:13px;}
 
     .tooltip.alarm .alarmArea {width:340px; position: absolute;}
     .tooltip.alarm .title {height:50px; border-bottom:1px solid #eee; padding: 0 25px}
-    .tooltip.alarm .alarmArea .title strong {float: left; display: inline-block; line-height: 50px; font-size:14px;}
+    .tooltip.alarm .alarmArea .title strong {font-weight: 400; float: left; display: inline-block; line-height: 50px; font-size:14px;}
     .tooltip.alarm .alarmArea .title span {float: right; color:#ff4d4e; font-size:13px; border-bottom:1px dashed #ff4d4e; cursor: pointer; margin-top: 17px; display: inline-block;}
     .tooltip.alarm .alarmArea .title::after {content: ''; display: block; clear: both;}
 
@@ -344,7 +344,8 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .m-header-wrap .m-nav .info-wrap .util ul li a {display: block; text-align: center; height:50px;line-height: 50px; position: relative;}
 .m-header-wrap .m-nav .info-wrap .util ul li a i {display: inline-block; font-size: 1.3rem; position: relative; top:3px;}
 .m-header-wrap .m-nav nav {padding-bottom: 65px;}
-.m-header-wrap .m-nav nav ul li {float: left; width:33.3334%; text-align: center; height:55px; margin-top: 30px}
+.m-header-wrap .m-nav nav ul li {float: left; width:calc(33.333% - 7px); margin-left: 10px; text-align: center; height:55px; margin-top: 30px}
+.m-header-wrap .m-nav nav ul li:first-child {margin-left: 0px;}
 .m-header-wrap .m-nav nav ul li a {display: block;}
 .m-header-wrap .m-nav nav ul li a i {display: block; font-size:1.8rem; margin-bottom: 6px; color:#555;}
 .m-header-wrap .m-nav nav ul li a span {color:#222;}
