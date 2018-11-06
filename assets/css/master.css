@@ -133,7 +133,7 @@ header .util .memlog.out a {color:#fff;font-size:13px;}
     .tooltip.alarm .followRequestArea {position: absolute; left:380px; }
     .tooltip.alarm .followRequestArea .title span {display: inline-block; cursor: pointer;position: absolute; top:11px;}
     .tooltip.alarm .followRequestArea .title span i {color:#aaa; }
-    .tooltip.alarm .followRequestArea .title strong {display: block; height:50px; line-height: 50px; text-align: center; font-size:14px;}
+    .tooltip.alarm .followRequestArea .title strong {display: block; height:50px; line-height: 50px; text-align: center; font-size:14px; font-weight: 400;}
     .tooltip.alarm .followRequestArea .followList ul li div.content {margin-top: 4px}
     .tooltip.alarm .followRequestArea .followList ul li div.content span {display: block; height: 22px; font-size:14px;}
     .tooltip.alarm .followRequestArea .followList ul li div.content time {display: block; font-size:12px; color:#aaa;}
