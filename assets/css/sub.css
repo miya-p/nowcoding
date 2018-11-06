@@ -1,11 +1,24 @@
 @charset "utf-8";
 
+.map_util { background:  #333; color:#fff; padding: 40px; position: relative; overflow: hidden;}
+.map_util h4 {font-family:'Montserrat'; font-size:60px; height:50px; line-height: 50px; position: absolute; color: rgba(255, 255, 255, .1); top:0; left:0;}
+.map_util address {line-height: 160%; font-size:15px; height:65px; float: left; width:calc(100% - 240px);}
+.map_util address span {font-size:14px; display: inline-block; margin-right: 7px;}
+.map_util address span a {color:#fff; display: inline-block; transition: all .3s;}
+.map_util address span a:hover {border-bottom:1px dashed #fff;}
+.map_util .map_link {float: left;}
+.map_util .map_link a {display: inline-block; width:60px; height:60px; border-radius: 50%; margin-left: 8px; overflow: hidden; text-indent: -999px; position: relative;}
+.map_util .map_link a.naver {background: #00c73c; }
+.map_util .map_link a.naver::after {content: ""; display: block; width:23px; height:23px; margin: 2px auto; background: url('../img/map_icon.png'); background-size:100%;}
+.map_util .map_link a.google {background: #eee; background: url('../img/map_icon_google.png'); background-size:100%;}
+.map_util .map_link a.daum {background: #fff;}
+.map_util .map_link a.daum::after {content: ""; display: block; width:38px; height:38px; margin: 0 auto; background: url('../img/map_icon.png') 0 -195px; background-size:100%;}
+
 .mypArea {background: #f5f6fa; height:auto; min-height:980px; padding: 50px 0 120px;}
 .mypArea h2 {font-size: 28px; color: #222; height: 58px; line-height: 40px}
 .mypArea h2 small {font-size:13px; color:#8c89a2;}
 .mypArea .lnb {width:280px; float: left;}
-.mypArea .lnb .box {background: #fff; -webkit-box-shadow: 2px 2px 15px 0px rgba(180,185,251,0.2);
--moz-box-shadow: 2px 2px 15px 0px rgba(180,185,251,0.2); box-shadow: 2px 2px 15px 0px rgba(180,185,251,0.2);}
+.mypArea .lnb .box {background: #fff; -webkit-box-shadow: 2px 2px 15px 0px rgba(180,185,251,0.2); -moz-box-shadow: 2px 2px 15px 0px rgba(180,185,251,0.2); box-shadow: 2px 2px 15px 0px rgba(180,185,251,0.2);}
 .mypArea .lnb .box:after {content: ""; display: block; clear: both;}
 
 .mypArea .lnb .box ul.mymenu {padding: 25px 0;}
@@ -29,9 +42,7 @@
 .curr_list > ul > li .title time {font-size: 13px; color:#000;}
 
 .curr_list.prj ul li:first-child {border:2px dashed #8c93a5; background: transparent; height:377px; display: table; transition:-webkit-box-shadow .3s; cursor:pointer;}
-.curr_list.prj ul li:first-child:hover {-webkit-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05);
--moz-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05);
-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05);}
+.curr_list.prj ul li:first-child:hover {-webkit-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05); -moz-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05); box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05);}
 .curr_list.prj ul li:first-child div {display: table-cell; vertical-align: middle; text-align: center}
 .curr_list.prj ul li:first-child div a {color:#8c89a2; font-size:16px;}
 .curr_list.prj ul li:first-child div a i {font-size:90px; }
@@ -56,14 +67,13 @@ box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.05);}
 .curr_list_recommend .slick-arrow.slick-prev::after {content: "<"; display: inline-block;}
 .curr_list_recommend .slick-arrow.slick-next::after {content: ">"; display: inline-block;}
 
-figure { position: relative; overflow: hidden;}
 figure img.origin {position: absolute; left:0px; top:0; right:0; bottom:0; width:100%; height: 100%;}
 figure img.transparent {width: 100%; position: relative;}
 .groupArea {position: absolute; z-index: 1; right: 10px; bottom: 10px;}
 .groupArea dd {float: left; position: relative; margin-left: -10px}
 .groupArea dd a {display: block; width:43px; height: 43px; border-radius: 50%; overflow: hidden}
 .groupArea dd a img {width: 100%; }
-.groupArea dt {float: left; background: #4c84ff; border-radius: 0 10px 10px 0; padding: 3px 10px 4px 8px; height: 20px; margin:12px 0 0 -2px}
+.groupArea dt {float: left; background: #4c84ff; border-radius: 0 10px 10px 0; padding: 2px 10px 3px 8px;; height: 20px; margin:12px 0 0 -2px}
 .groupArea dt a {color:#fff; font-size: 12px;}
 
 .settings .box table th {text-align: right; width:100px; padding: 15px 0}
@@ -104,11 +114,11 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 .curriculum .list ul li dl dd {float: left}
 .curriculum .list ul li dl dt {float: left; position: relative; width:520px; height:420px; background: #fff; margin-left: -40px; margin-top:40px; padding: 55px 65px;}
 .curriculum .list ul li:nth-child(even) dl dd {float: right; position: relative; margin-left: -40px;}
-.curriculum .list ul li:nth-child(even) dl dt {float: left;margin-left: 0px;}
+.curriculum .list ul li:nth-child(even) dl dt {float: left; margin-left: 0px;}
 
 .curriculum .list ul li dl dt strong { font-weight: 800; font-size:26px;line-height: 40px; color:#222;}
 .curriculum .list ul li dl dt p {font-size:14px; line-height: 1.5; color:#aaa; margin: 22px 0 40px;}
-.curriculum .list ul li dl dt a.btnGreen { font-size:15px; color:#fff; display: inline-block; text-align: center;width:105px; height:42px; line-height: 42px; background: #50c68c; border-radius:5px; font-family: 'Montserrat'; font-weight:600; letter-spacing:.04em;}
+.curriculum .list ul li dl dt a.btnGreen { font-size:15px; color:#fff; display: inline-block; text-align: center; width:105px; height:42px; line-height: 42px; background: #50c68c; border-radius:5px; font-family: 'Montserrat'; font-weight:600; letter-spacing:.04em;}
 
 .project .inner,
 .curriculum .inner {padding: 50px 0 120px}
@@ -221,3 +231,81 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .policy .inner > ul {margin-top:6px;}
 .policy .inner > ul > li {margin-bottom: 6px; letter-spacing:-.01em; text-align: justify;}
 .policy .inner > ul > li > ul {text-indent: 15px;}
+
+.login .hero__background {transform: scaleY(.1);}
+.login>svg {left: 0; pointer-events: none; position: absolute; top: 0;
+  -webkit-transform-origin: top center;
+  transform-origin: top center; width: 100%; z-index: -1; }
+.login .container {margin: 30px auto 120px;}
+.login-wp {width:50%; max-width: 470px; margin: -40px auto 0; position: relative; background: #fff; padding: 40px; -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.15); -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.15); box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.15);}
+.login-wp::after {content: ""; display: inline-block; }
+.login-wp h2 {font-size: 24px; text-align: center; font-weight: 800; color:#333; height: 24px; margin: 65px 0 0;}
+.login-wp p {font-size: 14px;}
+.login-wp form input[type='text'],
+.login-wp form input[type='password'],
+.login-wp form input[type='number'],
+.login-wp form input[type='email'] {width: 100%;border:1px solid #ddd; height: 45px; padding: 0 0 0 15px}
+.login-wp.joinArea form textarea {font-size: 12px; border:1px solid #ddd; width:100%; height:225px; padding: 15px; box-sizing: border-box; margin: 15px 0 0}
+.login-wp form input[type='text'].wrong,
+.login-wp form input[type='password'].wrong {border:1px solid #ff4d4e;}
+.login-wp form input[type='text'].wrong + small,
+.login-wp form input[type='password'].wrong + small {color:#ff4d4e;display: block; font-size:12px ;margin: 0px 0 0; line-height: 28px}
+.login-wp form input[type='text'].wrong + small i,
+.login-wp form input[type='password'].wrong + small i {font-size:16px; margin: 3px 3px 0 0; position: relative; top:2px;}
+.login-wp form dl {width:60%; margin: 0 auto;}
+.login-wp form dl dd {margin: 0 0 15px}
+.login-wp form dl dt {padding: 10px 0 0;}
+.login-wp form dl dd::after {content: ""; display: block; clear: both;}
+.login-wp form dl button {text-align: center; display: block; width: 99%; font-size:15px; height: 46px; color: #fff; background: #cc5aa4; background: -moz-linear-gradient(left, #cc5aa4 0%, #544ae4 100%); background: -webkit-linear-gradient(left, #cc5aa4 0%,#544ae4 100%); background: linear-gradient(to right, #cc5aa4 0%,#544ae4 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5aa4', endColorstr='#544ae4',GradientType=1 ); border-radius: 23px;}
+.login-wp form input[type='checkbox'] {display: none;}
+
+.login-wp.step1 p {text-align: center; width:60%; margin: 15px auto 30px;}
+.login-wp.step1 dd.util {margin: 14px 0 0}
+.login-wp.step1 dd.util::after {content: ""; display: block; clear: both;}
+.login-wp.step1 dd.util a {display: inline-block; float: left; height:14px; font-size:13px; transition:all .3s;}
+.login-wp.step1 dd.util a:last-child {float: right; color:#52b4d1; font-weight: bold;}
+.login-wp.step1 dd.util span {float: left}
+.login-wp.step1 .line {text-align: center; width: 60%; margin: 40px auto 40px; position: relative; font-family: "Montserrat"; }
+.login-wp.step1 .line::before,
+.login-wp.step1 .line::after {content: ""; display: block; height: 1px; width:40%; background: #ccc; position: absolute; top: 9px}
+.login-wp.step1 .line::after {right: 0px;}
+.login-wp.step1 ul.loginOther li {width: 60%; margin: 0 auto 20px}
+.login-wp.step1 ul.loginOther li a {display: block; height:54px; line-height: 54px; color:#fff; font-size:15px; position: relative; background: #7e5787;padding-left: 20px}
+.login-wp.step1 ul.loginOther li:nth-child(2) {margin: 0 auto 0;}
+.login-wp.step1 ul.loginOther li:nth-child(2) a {background: #51ba9f;}
+.login-wp.step1 ul.loginOther li a span {position: absolute; right:20px ; display: inline-block; width: 24px; height:24px;background: url('../img/ico_lessonable.png') center 50% no-repeat; top:14px;}
+.login-wp.step1 ul.loginOther li a span.ico_b {background-image:url('../img/lco_bull.png'); }
+
+.joinArea {display: none; width: 90%; max-width: 740px; height: 720px; border:1px solid #ddd;}
+.joinArea::after {content: ""; display: block; clear: both;}
+.joinArea .left,
+.joinArea .right {width: 50%; height: 100%; float: left; box-sizing: border-box; padding: 50px 0 0}
+.joinArea .left {padding: 0px 50px; background: #fff;}
+.joinArea .left h2 {text-align: left;}
+.joinArea .left p {margin-top: 20px}
+.joinArea .right {background: #f6f6f6}
+.joinArea form dl {width:70%;}
+.joinArea form .name input[name='j_surname'] {float: left; width:35%;}
+.joinArea form .name input[name='j_name'] {float: right; width:calc(65% - 10px);}
+.joinArea form .birth input[type='number'] {float: left; width:calc(100% - 100px);}
+.joinArea form .birth .genderArea {float: right; width:90px; border: 1px solid #ddd;}
+.joinArea form .birth .genderArea input {width:0px; height:0px;opacity: 0;}
+.joinArea form .birth .genderArea label {display: block; float: left; width: 50%; text-align: center; height: 45px; line-height: 45px;}
+.joinArea form .birth .genderArea label.checked {background: #005771; color:#fff;}
+.joinArea.step3 {height:380px; text-align: center; background: #f6f6f6; }
+p.infoP {width: 84%; margin: 30px auto 0; text-align: center; line-height: 160%; font-size: 16px;}
+button.btnBlue {display: block; margin: 40px auto 0; width: 240px; height:45px; background:#005771; color:#fff; font-size:16px;}
+
+.findArea { width: 50%; max-width:540px; height: 340px; padding: 65px 0}
+.findArea form {margin: 30px 0 0}
+.findArea dd.util {margin: 12px 0 0;}
+.findArea dd.util a {display: inline-block; float: left;}
+.findArea dd.util a i {font-size:1rem; float: left}
+.findArea dd.util a:last-child {float: right; color:#52b4d1;}
+
+.chkArea {cursor: pointer;}
+.chkArea label {display: inline-block; position: relative; }
+.chkArea label i {color:#aaa; font-size:1rem; position: relative; top:2px; padding-right: 5px;}
+.chkArea label i::before {border:1px solid #aaa; border-radius: 50% ;}
+.chkArea label.checked i {color:#00bc7c;}
+.chkArea label.checked i::before {border-color:#00bc7c;}

@@ -21,7 +21,6 @@
 </head>
 <body class="sub aboutus">
 
-    <script src='assets/include/pop-member.js'></script>
     <script src='assets/include/header.js'></script>
 
     <section class="company">
@@ -37,36 +36,36 @@
             <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=anjGYlDJtblYKV3S3W1T&submodules=geocoder"></script>
             <div id="map"  style="width:100%;height:400px;"></div>
             <script>
-            var HOME_PATH = window.HOME_PATH || '.';
-            var position = new naver.maps.LatLng(37.574740, 126.97939);
+                var HOME_PATH = window.HOME_PATH || '.';
+                var position = new naver.maps.LatLng(37.574740, 126.97939);
 
-            var map = new naver.maps.Map('map', {
-                center: position,
-                zoomControl: false, //줌 컨트롤의 표시 여부
-                zoom: 12
-            });
-
-            var markerOptions = {
-                position: position.destinationPoint(90, 15),
-                map: map,
-                icon: {
-                    url: HOME_PATH +'/assets/img/pointer_map.png',
-                    size: new naver.maps.Size(37, 52),
-                    origin: new naver.maps.Point(0, 0),
-                    anchor: new naver.maps.Point(25, 26)
-                }
-            };
-
-            var marker = new naver.maps.Marker(markerOptions);
-
-
+                var map = new naver.maps.Map('map', {
+                    center: position,
+                    zoomControl: false, //줌 컨트롤의 표시 여부
+                    zoom: 12
+                });
+                var markerOptions = {
+                    position: position.destinationPoint(90, 15),
+                    map: map,
+                    icon: {
+                        url: HOME_PATH +'/assets/img/pointer_map.png',
+                        size: new naver.maps.Size(37, 52),
+                        origin: new naver.maps.Point(0, 0),
+                        anchor: new naver.maps.Point(25, 26)
+                    }
+                };
+                var marker = new naver.maps.Marker(markerOptions);
             </script>
             <div class="map_util">
-                <address>서울특별시 종로구 종로1길 50 4층 레슨어블</address>
+                <h4>Address</h4>
+                <address>
+                    서울특별시 종로구 종로1길 50, 4층 135호 (더케이트윈타워 B동) <br>주식회사 레슨어블 <br>
+                    <span>Tel. 02-777-7909</span>  <span>E-mail. <a href="mailto:support@lessonable.co.kr">support@lessonable.co.kr</a></span>
+                </address>
                 <div class="map_link">
-                    <a href="#" class='naver'>네이버 지도로 가기</a>
-                    <a href="#" class='google'>구글 지도로 가기</a>
-                    <a href="#" class='daum'>다음 지도로 가기</a>
+                    <a href="http://naver.me/xPCyifDI" target="_blank" class='naver'>네이버 지도로 가기</a>
+                    <a href="https://goo.gl/maps/Xjc6eyuSqqt" target="_blank" class='google'>구글 지도로 가기</a>
+                    <a href="http://map.daum.net/?urlX=495371&urlY=1131986&itemId=18355442" target="_blank" class='daum'>다음 지도로 가기</a>
                 </div>
             </div>
 

@@ -44,7 +44,7 @@ input, textarea {font:14px 'NBG'; vertical-align:middle;}
 i, em, address{font-style:normal}
 object, embed{margin:0;padding:0; font-size:0}
 a:link, a:visited, a:active,a:hover {text-decoration:none;}
-figure {margin: 0px}
+figure {margin: 0px; padding: 0px; margin-block-start: 0px; margin-block-end: 0px; margin-inline-start: 0px; margin-inline-end: 0px;  position: relative; overflow: hidden; width: 100%;}
 label{cursor:pointer;}
 textarea:focus, input:focus, button:focus  {outline: none;}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */color: #8c93a5;opacity: 1; /* Firefox */}
@@ -81,7 +81,7 @@ textarea:focus, input:focus, button:focus  {outline: none;}
 .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
 body.fix {overflow: hidden; width: 100vw; height: 100vh;}
 .header-wrap {height:65px;}
-header {width:100%; height: 65px; z-index: 1001; position: fixed; opacity:1; background: rgba(0, 0, 0, 0); -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+header {width:100%; height: 65px; z-index: 1002; position: fixed; opacity:1; background: rgba(0, 0, 0, 0); -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
 header.nav-up {top:-65px; opacity:0;}
 header.nav-down {top:0px; opacity:1; background: #7850f5;}
 
@@ -100,17 +100,13 @@ header .util > ul > li #bell {position: relative; cursor:pointer; z-index: 10;}
 header .util > ul > li #bell::after {content: ""; display: inline-block; width: 6px; height: 6px; position: absolute; border-radius: 50%; background: #ff4d4e;}
 .sub.pol #bell::after {background: #fff;}
 header .util > ul > li i {color:#fff; font-size:1.8rem;}
-header .util .memlog.out {cursor:pointer;}
-header .util .memlog span.myprofile {display: inline-block; width: 30px; height: 30px; margin-right: 10px; border-radius: 50%; overflow: hidden; float: left}
-header .util .memlog span.myprofile img {display: block; width: 100%;}
-header .util .memlog strong {display: inline-block; line-height: 30px; color:#fff; font-size: 13px; font-weight: 400;}
-header .util .memlog strong a {color:#fff;}
-header .util .memlog::after {content: ""; display: block; clear: both;}
+header .util .memlog.out {cursor:pointer; display: inline-block; height:28px; line-height: 28px; border-radius: 3px; background: rgba(255,255,255,.3); width:56px; text-align: center; }
+header .util .memlog.out a {color:#fff;font-size:13px;}
 
-    .tooltip-bg {background: rgba(0,0,0,.0); width:100vw;  top:0; bottom:0; left:0; right:0; overflow:hidden; position: absolute; z-index: 2; display: none;}
-    .tooltip.alarm {position: absolute; width:340px; height:290px; margin-left: -163px; margin-top: 20px; z-index:10;}
+    .tooltip-bg {opacity: .5; bottom: 0; left: 0; position: fixed; right: 0; top: 0; z-index: 1003; display: none;}
+    .tooltip.alarm {position: absolute; width:340px; height:290px; margin-left: -163px; margin-top: 20px; z-index:1004;}
     .tooltip.alarm::after {content: ''; display: inline-block; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #fff; position: absolute; top:-7px; left:170px; z-index: 3; }
-    .tooltip.alarm .tooltipArea {background: #fff; width:100%; height:320px; position: relative; overflow:hidden; border-radius: 6px; -webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);-moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2); box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
+    .tooltip.alarm .tooltipArea {background: #fff; width:100%; height:290px; position: relative; overflow:hidden; border-radius: 6px; -webkit-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);-moz-box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2); box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 
     .tooltip.alarm .alarmArea {width:340px; position: absolute;}
     .tooltip.alarm .title {height:50px; border-bottom:1px solid #eee; padding: 0 25px}
@@ -119,7 +115,7 @@ header .util .memlog::after {content: ""; display: block; clear: both;}
     .tooltip.alarm .alarmArea .title::after {content: ''; display: block; clear: both;}
 
     .tooltip.alarm .alarmArea .requestList,
-    .tooltip.alarm .followRequestArea .followList {width:340px; padding: 0 25px; height:270px; overflow-y: auto;}
+    .tooltip.alarm .followRequestArea .followList {width:340px; padding: 0 25px; height:240px; overflow-y: auto;}
     .tooltip.alarm .alarmArea .requestList strong {display: block; font-size:12px; height:24px; margin: 25px 0 0;}
     .tooltip.alarm ul li {margin-bottom: 15px;}
     .tooltip.alarm ul li > div {float: left}
@@ -155,14 +151,13 @@ footer .info .gnb ul li a {font-size:13px; color:#fff; font-weight: 400;}
 footer .info .gnb ul li:first-child {}
 footer .info .gnb::after {content: ""; display: block; clear: both;}
 footer .info .address {color:#fff; margin-top: 17px; line-height: 160%; opacity:.7; font-size:12px;}
-footer .info .address a {color:#fff; display: inline-block; transition:all .3s; padding: 0 3px; font-size:12px;}
-footer .info .address a:hover {background: #fff; color:#222;}
+footer .info .address a {color:#fff; display: inline-block; transition:all .3s; font-size:12px; border:1px solid rgba(0,0,0,0);}
+footer .info .address a:hover {border-bottom:1px dashed #fff;}
 footer .info .address small {display: block; opacity: .3;}
 footer .info .address span {display: inline-block; position: relative; top:2px;width: 1px; height: 12px; background: #666; margin: 0 8px}
 
-/* 팝업 */
+/* 팝업
 .popupBg {display: none; position:fixed; width: 100%; height: 100vh; background:rgba(0,0,0,.5); z-index: 111}
-/* .popupBg .popclose {font-size:26px; width: 40px; height:40px; border:1px solid rgba(255,255,255,.3); position: absolute; z-index: 11; right:15px; top:15px; color:#fff;} */
 .pop-wp {background: #f6f6f6; position: fixed; top: 0; right: 0; left: 0; bottom:0; margin: auto; z-index:112; display: none;}
 .pop-wp .btn-pop-close {display: none;}
 .pop-wp .box {height: 100%; overflow:auto;}
@@ -237,6 +232,7 @@ button.btnBlue {display: block; margin: 40px auto 0; width: 240px; height:45px; 
 .chkArea label i::before {border:1px solid #aaa; border-radius: 50% ;}
 .chkArea label.checked i {color:#00bc7c;}
 .chkArea label.checked i::before {border-color:#00bc7c;}
+ */
 
 .sub.message header,
 .sub.message .header-wrap,
@@ -309,9 +305,13 @@ box-shadow: 3px 3px 20px 2px rgba(0,0,0,0.2);}
 .btnBlur {background: #f5f6fa; font-size: 13px; color:#8c93a5; padding: 7px 16px; border-radius: 3px ; transition: all .3s}
 .btnBlur:hover {background:#8c93a5; color:#f5f6fa;}
 
-.m-header-wrap {display: none;}
-.m-header-wrap .m-header {height:60px; width:100%; position: fixed;}
-/* .m-header-wrap .m-header.nav-up {top:-60px;} */
+.m-header-wrap {display: none; transition: all .3s;}
+.m-header-wrap .m-header {height:60px; width:100%; position: fixed; background: transparent; transition: all .3s;}
+
+.m-header-wrap.nav-up {top:-60px; opacity:0;}
+.m-header-wrap.nav-down {top:0px; opacity:1;}
+.m-header-wrap.nav-down .m-header { background: #7850f5;}
+
 .m-header-wrap .m-header h1 {display: inline-block; float: left; margin: 10px 0 0 20px;}
 .m-header-wrap .m-header h1 a {width: 140px; height: 40px; display:  block; text-indent: -999px; overflow: hidden;  background: url('../img/logo.png') no-repeat; background-size: contain;}
 .m-header-wrap .m-header button {width:60px; height:60px; float: right; right:0px; display: block;  position: relative;}
@@ -393,7 +393,7 @@ section.m_message ul li .actBtn button.reject {color:#777; background: #eee; mar
 .util_setting ul li:last-child a:hover {color:#222;}
 #character_mypage,
 #character {width:130px; height:130px; margin: 25px auto 15px; position: relative; overflow: hidden;}
-#character_mypage {margin: 25px 0 15px;}
+#character_mypage {margin: 25px auto 15px;}
 #character_mypage a,
 #character a {display: block; position: absolute; width:130px; height:130px; border-radius: 50%; overflow: hidden;}
 #character_mypage a img,

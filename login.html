@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>NOWCODING</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:url"                content="https://www.nowcoding.com/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="NOWCODING" />
+    <meta property="og:description"        content="온라인 코딩 교육 사이트 나우코딩" />
+    <meta property="og:image"              content="url" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/usage.js"></script>
+
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+</head>
+<body class="sub aboutus">
+
+    <script src='assets/include/header.js'></script>
+
+    <section class="login">
+        <div class="title">
+            <h2>로그인</h2>
+        </div>
+
+        <svg class="hero__background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1000" width="500" height="1000" preserveAspectRatio="none">
+              <defs>
+                  <linearGradient id="Gradient1">
+                    <stop class="stop1" offset="0%"/>
+                    <stop class="stop3" offset="100%"/>
+                  </linearGradient>
+                  <style type="text/css">
+                    .stop1 { stop-color: #cc5aa4; }
+                    .stop3 { stop-color: #544ae4; }
+                  </style>
+              </defs>
+            <path class="hero__wobble" d="M0 0 C 250 0, 500 0, 500 0 C 500 250, 500 500, 500 500 C 250 500, 0 500, 0 500 C 0 250, 0 500, 0 0 Z"  fill="url(#Gradient1)"></path>
+        </svg>
+
+        <div class="container">
+            <div class="login-wp step1">
+                <form class="" action="index.html" method="post">
+                    <dl class="">
+                        <dd><input type="text" name="log_id" value="" placeholder="아이디" required></dd>
+                        <dd>
+                            <input type="password" name="log_pw" value="" placeholder="비밀번호" required class="wrong">
+                            <small><i class="xi-warning"></i><span>입력값 잘못되었을 때 스타일</span></small>
+                        </dd>
+                        <dd class="chkArea">
+                            <input type="checkbox" name="chk1" value="chk2" id="chk2"/><label for="chk2" class="type-checkbox"> <i class="xi-check-min"></i> 로그인 유지하기</label>
+                        </dd>
+                        <dt><button type="button" name="button">로그인</button></dt>
+                        <dd class="util">
+                            <a href="#" class="btnfindid">아이디 찾기</a><span>&bull;</span>
+                            <a href="#" class="btnfindpw">비밀번호 찾기</a>
+                            <a href="#" class="btnjoin">회원가입</a>
+                        </dd>
+                    </dl>
+                </form>
+                <div class="line">OR</div>
+                <ul class="loginOther">
+                    <li><a href="#">볼비온으로 로그인 <span class="ico_b"></span></a></li>
+                    <li><a href="#">레슨어블로 로그인 <span class="ico_l"></span></a></li>
+                </ul>
+            </div>
+
+        </div><!-- e.container-->
+    </section>
+
+    <script>
+        var vars = {
+            curve: window.innerWidth > 1024 ? 650 : 600
+        };
+        anime({
+            targets: '.hero__background',
+            scaleY: [
+                { value: 0, duration: 0 },
+                { value: 1.0, duration: 1500 }
+            ]
+        });
+        anime({
+            targets: '.hero__wobble',
+            translateY: 0,
+            scaleY: [
+                { value: [1.75, 1], duration: 500 }
+            ],
+            d: [
+                { value: 'M0 0 C 250 0, 500 0, 500 0 C 500 250, 500 500, 500 500 C 250 ' + vars.curve + ', 0 500, 0 500 C 0 250, 0 500, 0 0 Z' },
+                { value: 'M0 0 C 250 0, 500 0, 500 0 C 500 250, 500 500, 500 500 C 250 500, 0 500, 0 500 C 0 250, 0 500, 0 0 Z' }
+            ],
+            duration: 1500,
+            direction: 'normal',
+            loop: false
+        });
+    </script>
+
+    <script src='assets/include/footer.js'></script>
+
+</body>
+</html>

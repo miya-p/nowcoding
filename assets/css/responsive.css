@@ -23,9 +23,6 @@
 
 @media (max-width:1023px){
     header nav {margin-left: 10%}
-    header .util .memlog strong,
-    header .util .memlog.out span {display: none;}
-    header .util .memlog.out:before {content: "로그인"; display: inline-block; height:28px; line-height: 28px; border-radius: 3px; background: rgba(255,255,255,.3); color:#fff; width:56px; text-align: center; font-size:13px;}
 
     .pop-wp form dl,
     .loginArea.step1 .line,
@@ -64,9 +61,15 @@
 
 @media (max-width:767px){
 
+    .login .container {margin: 30px auto 60px;}
+    .login-wp {width:60%;}
+    .login-wp form dl,
+    .login-wp.step1 ul.loginOther li,
+    .login-wp.step1 .line {width: 100%; max-width:320px;}
+
     header {display: none;}
     .header-wrap {height: 60px;}
-    .m-header-wrap {display: block; position: relative; z-index: 110;}
+    .m-header-wrap {display: block; position: relative; z-index: 1002;}
     section > .title {padding: 25px 0;}
     section > .title h2 {font-size:24px; margin-bottom:0px;}
     section > .title p {font-size:13px; line-height: 1.5;}
@@ -127,6 +130,9 @@
     .joinArea .right {padding: 50px 0;}
     .joinArea .left {width:80%; margin: 0 auto; padding: 0; background: transparent;}
 
+    .map_util address {float: none; width:100%; height:auto;}
+    .map_util .map_link {float: none; text-align: center; margin: 25px  auto 0; }
+
 }
 
 @media (max-width:639px){
@@ -143,7 +149,6 @@
     .curr_list.row3 > ul > li {width:100%; float: none;}
     .curr_list.row3 > ul > li:nth-child(2n),
     .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 0 25px;}
-
     .curr_list.row4 li {width:100% !important;}
     .curr_list.row4 li:nth-child(2n),
     .curr_list.row4 li:nth-child(3n) {margin: 0 auto 25px; }

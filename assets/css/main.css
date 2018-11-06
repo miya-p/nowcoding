@@ -23,7 +23,7 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 .specArea ul li:nth-child(2) dl dd {float: right;}
 .specArea ul li dl dt {width: 45%; margin-left: 5%}
 .specArea ul li dl dt strong {display: block; font-size: 36px; color:#111;height: auto; margin-bottom: 2rem; line-height: 140%; letter-spacing: -.04em}
-.specArea ul li dl dt p {line-height: 160%; width: 80%; margin: 0 0 3rem;}
+.specArea ul li dl dt p {line-height: 160%; width: 80%; margin: 0 0 3rem; text-align: justify;}
 .specArea ul li dl dt .btnArea {text-align: left;}
 .specArea ul li dl dt a {background: #1050ff;}
 .specArea ul li::after {content: ""; display: block; clear: both;}
@@ -43,13 +43,12 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 }
 .expArea .courseArea .slick-list {height:600px; position: relative;}
 .expArea .courseArea .box {float: left; height:600px; width:100vw; position: absolute !important;}
-.expArea .courseArea .box .img {width:100%; min-height:600px; background: url('../img/course101.png') center; background-size: cover; background-attachment: fixed;}
-.expArea .courseArea .box .img.dd102 {background-size: 150%;}
-.expArea .courseArea .box .spec {background: #fff; position: absolute; bottom:0px; left:50%; width:50%;}
-.expArea .courseArea .box .spec .title {margin: 40px 40px 13px; height:45px;}
+.expArea .courseArea .box .img {width:100%; min-height:600px; background: url('../img/course101.png') center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;}
+.expArea .courseArea .box .spec {background: #fff; position: absolute; bottom:0px; left:50%; width:50%; transition: all .3s;}
+.expArea .courseArea .box .spec .title {margin: 40px 40px 20px; height:45px;}
 .expArea .courseArea .box .spec .title span {float: left; width: 40px; height: 45px; line-height: 45px; font-family: "Montserrat"; color:#fff; text-align: center; background: url('../img/course_tt.png') no-repeat; background-size: contain;}
 .expArea .courseArea .box .spec .title h3 {float: left; font-size:24px; color:#333; height: 45px; line-height: 45px; display: inline-block; margin-left: 6px;}
-.expArea .courseArea .box .spec p {line-height: 140%; color:#aaa; margin: 10px 40px 0; text-align: justify;}
+.expArea .courseArea .box .spec p {line-height: 140%; color:#aaa; margin: 0 40px 0; text-align: justify;}
 .expArea .courseArea .box .btnArea {margin: 16px 40px 0;}
 .expArea .courseArea .box a {background: #ffcc33;}
 .expArea .courseArea .box a span,
@@ -72,7 +71,7 @@ section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto;
 section.lscArea {margin: 120px 0 0; overflow: hidden;}
 section.lscArea h2 {color:#fff;}
 section.lscArea h2 br {display: none;}
-.lscArea .lsc {background: #222;height: 520px;}
+.lscArea .lsc {background: #222;height: 520px; position: relative; margin-top: -1px; padding-top:1px;}
 .lscArea .lsc .inner {position: relative; z-index:4;}
 .lscArea .lsc p {text-align: center; font-size:20px; color:#fff; line-height: 140%}
 .lscArea .lsc a {display: block; text-align: center;width: 450px; height:85px; line-height: 85px; margin: 115px auto 0; font-size:26px; color:#fff; border-radius: 40px; transition: all .3s; background: #843cf6; background: -moz-linear-gradient(-45deg, #843cf6 0%, #44a6f3 100%); background: -webkit-linear-gradient(-45deg, #843cf6 0%,#44a6f3 100%); background: linear-gradient(135deg, #843cf6 0%,#44a6f3 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#843cf6', endColorstr='#44a6f3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
@@ -107,13 +106,16 @@ section.lscArea h2 br {display: none;}
 	.expArea .course .spec {width:calc(100% - 120px); position: relative; height:auto; left:0%; top:-60px; margin-left: 0px; margin: 0 20px; padding:50px 40px;-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);}
 
 	.lscArea .lsc a {width: 350px; height: 65px; line-height: 65px; font-size: 22px;}
-	.lscArea .lsc p {width: 80%; margin: 0 auto;}
+	.lscArea .lsc p {margin: 0 auto;}
 	.lscArea .lsc p br {display: none;}
 	.lscArea .lsc .galaxy .g03 {margin-left: -55%}
 	.lscArea .lsc .galaxy .g04 {left:-30%;}
 }
 
 @media (max-width:767px){
+
+	section h2 {font-size: 30px; margin: 0 0 35px;}
+
 	.visual {height:580px;}
 	.visual .mainText {padding: 70px 0 0;}
 	.visual .mainText h2 {font-size: 30px; text-align: center;}
@@ -130,25 +132,30 @@ section.lscArea h2 br {display: none;}
 	.specArea ul li dl dd img {width:70%;}
 	.specArea ul li dl dd {width:100%; margin-left: 0%;}
 	.specArea ul li dl dt {width:100%; margin-left: 0%;}
-	.specArea ul li dl dt strong {text-align: center; margin: 40px 0 0;}
+	.specArea ul li dl dt strong {text-align: center; margin: 40px 0 0; font-size:24px;}
 	.specArea ul li dl dt strong br {display: none;}
 	.specArea ul li dl dt p {width: 100%; margin: 1.3rem 0 0;}
 	.specArea ul li dl dt .btnArea {text-align: center;}
 
 	section.lscArea h2 br {display: block;}
-	.lscArea .lsc p {font-size: 16px;}
+	.lscArea .lsc p {font-size: 14px;}
+	.lscArea .lsc a {margin: 80px auto 0; width:200px; height:45px; line-height: 45px; font-size:16px;}
 	.lscArea .lsc .galaxy .g04 {left: -60%;}
 	.lscArea .lsc .galaxy .g03 {margin-left: -68%}
 
 	.expArea .courseImg {padding: 280px 0 0; height:60px;}
-	.expArea .course .spec {}
-	.expArea .course .spec h3 {font-size:26px;}
+	.expArea .courseArea .box .spec {-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1); -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1); box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);}
+	.expArea .courseArea .box .spec .title h3 {font-size:22px;}
+	.expArea .courseArea .box .img {min-height:380px; background-size: cover; background-attachment: initial;}
 
 	.prjArea ul li {width:calc(25% - 2px);}
 	.prjArea ul li:nth-child(n+17) {display: none;}
 
-	.expArea .courseArea .box .spec {width:calc(100% - 40px); margin: 0 20px; left:0;}
-	.expArea .courseArea .slick-arrow {top:250px;}
+	.expArea .courseArea .box .spec {width:calc(100% - 40px); margin: 0 20px; left:0; padding: 0 0 30px;}
+	.expArea .courseArea .box .spec .title {margin: 30px 30px 10px;}
+	.expArea .courseArea .box .spec p {margin:0 30px; }
+	.expArea .courseArea .box .btnArea {margin: 10px 30px 0;}
+	.expArea .courseArea .slick-arrow {top:200px;}
 	.expArea .courseArea .slick-arrow.slick-prev {left:20px;}
 	.expArea .courseArea .slick-arrow.slick-next {right:20px;}
 }
