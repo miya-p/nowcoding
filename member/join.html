@@ -11,18 +11,18 @@
     <meta property="og:image"              content="url" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="assets/js/anime.min.js"></script>
-    <script src="assets/js/usage.js"></script>
-    <script src="assets/js/form.js"></script>
+    <script src="../assets/js/anime.min.js"></script>
+    <script src="../assets/js/usage.js"></script>
+    <script src="../assets/js/form.js"></script>
 
-    <link rel="stylesheet" href="assets/css/master.css">
-    <link rel="stylesheet" href="assets/css/sub.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body class="sub aboutus">
 
-    <script src='assets/include/header.js'></script>
+    <script src='../assets/include/header.js'></script>
 
     <section class="login">
         <div class="title">
@@ -71,7 +71,7 @@
                                     <input type="radio" name="gender" id="gender2" value="2" placeholder="여"><label for="gender2" class="type-checkbox"> 여</label>
                                 </div>
                             </dd>
-                            <dt><h4>개인정보 입력</h4></dt>
+                            <dt><h4>회원정보 입력</h4></dt>
                             <dd>
                                 <input type="email" name="j_email" value="" placeholder="이메일 주소" required>
                             </dd>
@@ -79,13 +79,14 @@
                                 <input type="text" name="j_id" value="" placeholder="아이디" required>
                             </dd>
                             <dd>
-                                <input type="password" name="j_pw" value="" placeholder="비밀번호" required>
+                                <input type="password" name="j_pw1" value="" placeholder="비밀번호" required>
                             </dd>
                             <dd>
-                                <input type="password" name="j_pw" value="" placeholder="비밀번호 확인" required>
+                                <input type="password" name="j_pw2" value="" placeholder="비밀번호 확인" required class="correct">
+                                <small><i class="xi-check-circle"></i><span>입력값 정답</span></small>
                             </dd>
                             <dt>
-                                <button type="button" name="button" class="btnjoin3">회원가입</button>
+                                <button type="button" name="button" onclick="location.href='join_ok.html'">회원가입</button>
                             </dt>
                         </dl>
                     </form>
@@ -94,34 +95,7 @@
         </div><!-- e.container-->
     </section>
 
-    <script>
-        var vars = {
-            curve: window.innerWidth > 1024 ? 650 : 600
-        };
-        anime({
-            targets: '.hero__background',
-            scaleY: [
-                { value: 0, duration: 0 },
-                { value: 1.0, duration: 1500 }
-            ]
-        });
-        anime({
-            targets: '.hero__wobble',
-            translateY: 0,
-            scaleY: [
-                { value: [1.75, 1], duration: 500 }
-            ],
-            d: [
-                { value: 'M0 0 C 250 0, 500 0, 500 0 C 500 250, 500 500, 500 500 C 250 ' + vars.curve + ', 0 500, 0 500 C 0 250, 0 500, 0 0 Z' },
-                { value: 'M0 0 C 250 0, 500 0, 500 0 C 500 250, 500 500, 500 500 C 250 500, 0 500, 0 500 C 0 250, 0 500, 0 0 Z' }
-            ],
-            duration: 1500,
-            direction: 'normal',
-            loop: false
-        });
-    </script>
-
-    <script src='assets/include/footer.js'></script>
+    <script src='../assets/include/footer.js'></script>
 
 </body>
 </html>

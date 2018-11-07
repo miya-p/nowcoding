@@ -22,7 +22,7 @@
 }
 
 @media (max-width:1023px){
-    
+
     header nav {margin-left: 10%}
     .pop-wp form dl,
     .loginArea.step1 .line,
@@ -86,8 +86,8 @@
     .curriculum .list ul li dl dt {width:90%; margin: -40px auto 0 !important; float: none; padding: 30px; text-align: center;}
     .curriculum .list ul li:nth-child(even) dl dd,
     .curriculum .list ul li:nth-child(even) dl dt {float: none;}
-    .curriculum .list ul li dl dt strong {font-size:16px; }
-    .curriculum .list ul li dl dt strong br {display: none;}
+    .curriculum .list ul li dl dt h3 {font-size:16px; }
+    .curriculum .list ul li dl dt h3 br {display: none;}
     .curriculum .list ul li dl dt p {font-size:12px; margin: 15px 0 30px;}
     .curriculum .list ul li dl dt a.btnGreen {display: inline-block; margin: 0 auto;}
     .curriculum .list ul li dl dd img {height:auto; width:100%; left:0%; margin-left: 0%;}

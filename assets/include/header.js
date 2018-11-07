@@ -122,7 +122,7 @@ document.write(
 + '            <li><a href="/nowcoding/message.html"><i class="xi-message"></i></a></li>'
 + '        </ul>'
 + '        <div class="memlog out">'
-+ '            <a href="/nowcoding/login.html">로그인</a>'
++ '            <a href="/nowcoding/member/login.html">로그인</a>'
 + '        </div>'
 + '        <div class="memlog in disn">'
 + '            <span class="myprofile">'
