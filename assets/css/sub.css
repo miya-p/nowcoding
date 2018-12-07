@@ -34,7 +34,7 @@
 
 .curr_list > ul > li .title {padding: 20px;}
 .curr_list > ul > li .title h3 {display: block; font-size:15px; color:#444; margin-bottom: 13px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:100%; overflow:hidden; font-weight: 700;}
-.curr_list > ul > li .title p {font-size: 13px; color:#8c89a2; text-overflow: ellipsis; height: 17px; overflow: hidden;  white-space: nowrap;}
+.curr_list > ul > li .title p {font-size: 13px; color:#8c89a2; text-overflow: ellipsis; height: 17px; overflow: hidden; white-space: nowrap;}
 .curr_list > ul > li .title span {font-size: 13px; color:#ccc;}
 .curr_list > ul > li .title span:after {content: "";display: inline-block; width:5px;}
 .curr_list > ul > li .title time {font-size: 13px; color:#000;}
@@ -60,7 +60,7 @@
 .curr_list_recommend .slick-slide .title .rate.r3 span:nth-child(n+4),
 .curr_list_recommend .slick-slide .title .rate.r4 span:nth-child(n+5),
 .curr_list_recommend .slick-slide .title .rate.r5 span:nth-child(n+6) {background-position: 0 -20px;}
-.curr_list_recommend .slick-arrow {position: absolute; right:0; top:-56px;text-indent: -9999px; overflow:hidden; height:38px; width:38px; border:1px solid #eee; background: #fff;}
+.curr_list_recommend .slick-arrow {position: absolute; right:0; top:-56px; text-indent: -9999px; overflow:hidden; height:38px; width:38px; border:1px solid #eee; background: #fff;}
 .curr_list_recommend .slick-arrow.slick-prev {right:37px;}
 .curr_list_recommend .slick-arrow.slick-prev::after {content: "<"; display: inline-block;}
 .curr_list_recommend .slick-arrow.slick-next::after {content: ">"; display: inline-block;}
@@ -71,7 +71,7 @@ figure img.transparent {width: 100%; position: relative;}
 .groupArea dd {float: left; position: relative; margin-left: -10px}
 .groupArea dd a {display: block; width:43px; height: 43px; border-radius: 50%; overflow: hidden}
 .groupArea dd a img {width: 100%;}
-.groupArea dt {float: left; background: #4c84ff; border-radius: 0 10px 10px 0; padding: 2px 10px 3px 8px;; height: 20px; margin:12px 0 0 -2px}
+.groupArea dt {float: left; background: #4c84ff; border-radius: 0 10px 10px 0; padding: 2px 10px 3px 8px; height: 20px; margin:12px 0 0 -2px}
 .groupArea dt a {color:#fff; font-size: 12px;}
 
 .settings .box table th {text-align: right; width:100px; padding: 15px 0}
@@ -115,7 +115,7 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 .curriculum .list ul li:nth-child(even) dl dt {float: left; margin-left: 0px;}s
 .curriculum .list ul li dl dt strong { font-weight: 800; font-size:26px;line-height: 40px; color:#222;}
 .curriculum .list ul li dl dt p {font-size:14px; line-height: 1.5; color:#aaa; margin: 22px 0 40px;}
-.curriculum .list ul li dl dt a.btnGreen { font-size:15px; color:#fff; display: inline-block; text-align: center; width:105px; height:42px; line-height: 42px; background: #50c68c; border-radius:5px; font-family: 'Montserrat'; font-weight:600; letter-spacing:.04em;}
+.curriculum .list ul li dl dt a.btnGreen { font-size:15px; background: #50c68c; color:#fff; display: inline-block; text-align: center; width:105px; height:42px; line-height: 42px; border-radius:5px; font-family: 'Montserrat'; font-weight:600; letter-spacing:.04em;}
 
 .project .inner,
 .curriculum .inner {padding: 50px 0 120px}
@@ -247,34 +247,34 @@ section > .title p {color:#fff; font-size:15px; text-align: center; margin: 0 au
 .__member form dl {width:80%; margin: 0 auto;}
 .__member form dl dd {margin: 0 0 15px;}
 .__member form dl dt {padding: 30px 0 15px;}
-.__member form dl dt h4 {font-size:15px; color:#544ae4;}
+.__member form dl dt h4 {font-size:15px; color:#222;}
 .__member form dl dd::after {content: ""; display: block; clear: both;}
-.__member form dl button {text-align: center; display: block; width: 99%; font-size:15px; height: 46px; color: #fff; background: #cc5aa4; background: -moz-linear-gradient(left, #cc5aa4 0%, #544ae4 100%); background: -webkit-linear-gradient(left, #cc5aa4 0%, #544ae4 100%); background: linear-gradient(to right, #cc5aa4 0%,#544ae4 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5aa4', endColorstr='#544ae4',GradientType=1 ); border-radius: 23px;}
+.__member form dl button {text-align: center; display: block; width: 99%; font-size:15px; height: 46px; color: #fff; background: #cc5aa4; background: -moz-linear-gradient(left, #cc5aa4 0%, #544ae4 100%); background: -webkit-linear-gradient(left, #cc5aa4 0%, #544ae4 100%); background: linear-gradient(to right, #cc5aa4 0%,#544ae4 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5aa4', endColorstr='#544ae4',GradientType=1); border-radius: 23px;}
 .__member form input[type='checkbox'] {display: none;}
 
-.loginArea {max-width: 470px;  padding: 50px 0 30px;}
+.loginArea {max-width: 470px; padding: 50px 0 30px;}
 .loginArea::after {content: ""; display: inline-block; }
-.loginArea.step1 p {text-align: center; width:60%; margin: 15px auto 30px;}
-.loginArea.step1 dd.util {margin: 14px 0 0}
-.loginArea.step1 dd.util::after {content: ""; display: block; clear: both;}
-.loginArea.step1 dd.util a {display: inline-block; float: left; height:14px; font-size:14px; transition:all .3s; color:#888;}
-.loginArea.step1 dd.util a:last-child {float: right; color:#222;}
-.loginArea.step1 dd.util span {float: left}
-.loginArea.step1 .line {text-align: center; width: 80%; margin: 40px auto 40px; position: relative; font-family: "Montserrat"; }
-.loginArea.step1 .line::before,
-.loginArea.step1 .line::after {content: ""; display: block; height: 1px; width:40%; background: #ccc; position: absolute; top: 9px}
-.loginArea.step1 .line::after {right: 0px;}
-.loginArea.step1 ul.loginOther li {width: 80%; margin: 0 auto 20px}
-.loginArea.step1 ul.loginOther li a {display: block; height:54px; line-height: 54px; color:#fff; font-size:15px; position: relative; background: #7e5787;padding-left: 30px; border-radius:27px;}
-.loginArea.step1 ul.loginOther li:nth-child(2) {margin: 0 auto 0;}
-.loginArea.step1 ul.loginOther li:nth-child(2) a {background: #51ba9f;}
-.loginArea.step1 ul.loginOther li a span {position: absolute; right:30px ; display: inline-block; width: 24px; height:24px;background: url('../img/ico_lessonable.png') center 50% no-repeat; top:14px;}
-.loginArea.step1 ul.loginOther li a span.ico_b {background-image:url('../img/lco_bull.png'); }
+.loginArea p {text-align: center; width:60%; margin: 15px auto 30px;}
+.loginArea dd.util {margin: 14px 0 0}
+.loginArea dd.util::after {content: ""; display: block; clear: both;}
+.loginArea dd.util a {display: inline-block; float: left; height:14px; font-size:14px; transition:all .3s; color:#888;}
+.loginArea dd.util a:last-child {float: right; color:#222;}
+.loginArea dd.util span {float: left}
+.loginArea .line {text-align: center; width: 80%; margin: 40px auto; position: relative; font-family: "Montserrat"; }
+.loginArea .line::before,
+.loginArea .line::after {content: ""; display: block; height: 1px; width:40%; background: #ccc; position: absolute; top: 9px}
+.loginArea .line::after {right: 0px;}
+.loginArea ul.loginOther li {width: 80%; margin: 0 auto 20px}
+.loginArea ul.loginOther li a {display: block; height:54px; line-height: 54px; color:#fff; font-size:15px; position: relative; background: #7e5787; padding-left: 30px; border-radius:27px;}
+.loginArea ul.loginOther li:nth-child(2) {margin: 0 auto 0;}
+.loginArea ul.loginOther li:nth-child(2) a {background: #51ba9f;}
+.loginArea ul.loginOther li a span {position: absolute; right:30px; display: inline-block; width: 24px; height:24px; background: url('../img/ico_lessonable.png') center 50% no-repeat; top:14px;}
+.loginArea ul.loginOther li a span.ico_b {background-image:url('../img/lco_bull.png'); }
 
 .joinArea {max-width: 470px; padding: 20px 0 50px;}
 .joinArea form .name input[name='j_surname'] {float: left; width:35%;}
 .joinArea form .name input[name='j_name'] {float: right; width:calc(65% - 10px);}
-.joinArea form .birth input[type='number'] {float: left; width:calc(100% - 100px);}
+.joinArea form .birth input[name='numeric'] {float: left; width:calc(100% - 100px);}
 .joinArea form .birth .genderArea {float: right; width:90px; border: 1px solid #ddd;}
 .joinArea form .birth .genderArea input {width:0px; height:0px;opacity: 0;}
 .joinArea form .birth .genderArea label {display: block; float: left; text-align: center; height: 43px; line-height: 45px; cursor: pointer;}
@@ -296,7 +296,92 @@ p.infoP {margin: 30px auto 0; text-align: center; line-height: 160%; font-size: 
 .chkArea {cursor: pointer;}
 .chkArea label {display: inline-block; position: relative; font-size:13px; color:#aaa;}
 .chkArea label i {color:#aaa; font-size:1rem; position: relative; top:3px; padding-right: 5px;}
-.chkArea label i::before {border:2px solid #aaa; border-radius: 50% ;}
+.chkArea label i::before {border:2px solid #aaa; border-radius: 50%;}
 .chkArea label.checked,
 .chkArea label.checked i {color:#00bc7c;}
 .chkArea label.checked i::before {border-color:#00bc7c;}
+
+.message {background: #f5f6fa;}
+.message .container {width:100%; max-width:1280px; background: #fff; margin: 50px auto; height:calc(100vh - 165px);}
+.message .container::after {content: ""; display: block; clear: both;}
+.message .container > .left {width: 280px; height: 100%; background: #fcfcfd; float: left; border-right: 1px solid #eee;}
+.message .container > .left .profile {width: calc(100% - 50px); margin: 25px 25px 0;}
+.message .container > .left .profile::after {content: ""; display: block; clear: both;}
+.message .container > .left figure {width: 48px; height: 48px; border-radius: 50%; background: #ccc; float: left;}
+.message .container > .left figure img {width:100%;}
+.message .container > .left .my_id {display: block; float: left; width: 100px; height: 48px; line-height: 48px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; color:#222; font-weight: 700; margin-left: 8px;}
+.message .container > .left .profile ul {float: right; margin: 8px 0 0;}
+.message .container > .left .profile ul li {float: left;}
+.message .container > .left .profile ul li a {display: inline-block; width:30px; height: 30px; line-height: 30px; text-align: center;}
+.message .container > .left .profile ul li a i {font-size: 24px; line-height: inherit; color:#aaadb7;}
+.message .container > .left .mesArea {margin: 40px 0 0; }
+.message .container > .left .mesArea::after {content: ""; display: block; clear: both;}
+.message .container > .left .mesArea h3 {color:#444; font-weight: 700; font-size: 13px; height: 30px; line-height: 30px; margin: 0 25px; letter-spacing: 0.05em;}
+.message .container > .left .mesArea h3::after {content: ""; display: block; clear: both;}
+.message .container > .left .mesArea h3 a {float: right; display: inline-block; width:30px; height: 30px; text-align: center;}
+.message .container > .left .mesArea h3 a i {font-size: 22px; color:#ccc;}
+.message .container > .left .mesArea ul {position: relative;}
+.message .container > .left .mesArea ul li::after {content: ""; display: block; clear: both;}
+.message .container > .left .mesArea ul li {padding: 12px 25px;}
+.message .container > .left .mesArea ul li:last-child {margin: 0 0 0;}
+.message .container > .left .mesArea ul li figure {width: 38px; height: 38px;}
+.message .container > .left .mesArea ul li figure img {width: 100%;}
+.message .container > .left .mesArea ul li .name {float: left; margin-left: 8px;}
+.message .container > .left .mesArea li {position: relative;}
+.message .container > .left .mesArea li::before {transition: all .3s;}
+.message .container > .left .mesArea li:hover {background: rgba(0,0,0,.05); cursor: pointer;}
+.message .container > .left .mesArea li:hover::before {content:"\e996"; display: block; position: absolute; font-family: xeicon!important; left:2px; font-size:22px; top: 23px;}
+.message .container > .left .mesArea li .name .char_id {position: relative; height: 18px; line-height: 1.6; float: none; margin: 0; font-size:13px; color:#5f6681; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin-top: 4px;}
+.message .container > .left .mesArea li .name .char_id.new::after {content: ""; display: block; width: 6px; height: 6px; position: absolute; background: #f75749; right: -10px; top: 0px; border-radius: 50%;}
+.message .container > .left .mesArea li .name time {font-size:10px; color:#aaa; display: block;}
+.message .container > .left .mesArea li > a {float: right; margin-right:6px; display: inline-block; margin-top: 9px; display: none;}
+.message .container > .left .mesArea li > a i {font-size: 18px; color:#aaa;}
+.message .container > .left .mesArea li:hover > a {display: block;}
+.message .container > .left .mesForm input[type="text"] {}
+.message .container > .left .mesArea ol li {padding: 12px 25px;}
+.message .container > .left .mesArea ol li.active {background: #5f6681; }
+.message .container > .left .mesArea ol li.active .name .char_id {color: #fff;}
+
+.message .container > .right {width: calc(100% - 281px); height: 100%; float: left;}
+.message .container > .right .top {border-bottom: 1px solid #eee; height:70px;}
+.message .container > .right .top .left {float: left; margin-left: 25px;}
+.message .container > .right .top .left h3 {font-size: 16px; font-weight: 700; margin-top: 21px; height:19px;}
+.message .container > .right .top .left time {font-size:10px; color:#aaa; display: inline-block;}
+.message .container > .right .top .left span {font-size:10px; color:#aaa; display: inline-block; position: relative; padding-left: 4px;}
+.message .container > .right .top .left span i {font-size:13px; position: relative; top: 2px;}
+
+.message .container > .right .top .right {float: right;}
+.message .container > .right .top .right form {float: left; margin-top: 19px; position: relative;}
+.message .container > .right .top .right form input[type="text"] { padding: 0 10px; width: 150px; border-radius:4px; border:1px solid #ddd; height:34px; font-size:12px;}
+.message .container > .right .top .right form::after {content: "\e97a"; display: block; position: absolute; font-family: xeicon!important; right: 7px; font-size: 17px; top: 9px; color:#8f94a6;}
+.message .container > .right .top .right ul {float: left; margin: 18px 25px 0 10px;}
+.message .container > .right .top .right ul li {float: left; margin-left: 20px;}
+.message .container > .right .top .right ul li a {display: inline-block; height:34px; line-height: 34px;}
+.message .container > .right .top .right ul li a i {font-size:24px; line-height: 34px; color:#8f94a6; transition: all .3s}
+.message .container > .right .top .right ul li a:hover i {color:#5195ee;}
+.message .container > .right .top .right ul li:nth-child(2) a i {font-size:29px;}
+
+.message .container > .right .contents {height: calc(100% - 71px);}
+.message .container > .right .contents::after {content: ""; display: block; clear: both;}
+.message .container > .right .contents .talk {float: left; }
+.message .container > .right .contents .file {float: right; width:240px; height: 100%; border-left: 1px solid #eee;}
+
+.maze > div::after {content: ""; clear: both; display: block;}
+.maze .box1 {text-align: center; background: url('../img/maze001.png') right top no-repeat; height: 450px}
+.maze .box1 span {display: inline-block; height:30px; margin: 85px 0 0; font-size: 16px; font-family: 'Montserrat'}
+.maze .box1 h3 {font-size:40px; height:60px; line-height: 60px; color:#000;}
+.maze .box1 h4 {font-size:20px; height:30px; line-height: 30px; color:#000;}
+.maze .box1 p {font-size:15px; line-height: 1.7; width:50%; margin: 30px auto 0;}
+.maze .box2 {background: #f7f3e8;}
+.maze .box2 h3 {text-align: center;}
+.maze .box2 h3 span {background: url('../img/curr_h3.png'); width:110px; height:91px; display: inline-block; overflow: hidden; text-indent: -999px;}
+.maze .box2 ul {padding: 40px 0 80px;}
+.maze .box2 ul::after {content: ""; clear: both; display: block;}
+.maze .box2 ul li {position: relative; float: left; width:25%;}
+.maze .box2 ul li div {width:170px; margin: 0 auto;}
+.maze .box2 ul li span {position: absolute; width: 40px; height: 40px; line-height: 40px; text-align: center; display: inline-block; color:#fff; background:#4b3e2e; z-index: 2; border-radius: 50%; font-family: 'Montserrat';}
+.maze .box2 ul li figure {width: 170px; height: 170px; border-radius: 50%; background: #fff; text-align: center; display: table-cell; vertical-align: middle;}
+.maze .box2 ul li figure img {width: 50%;}
+.maze .box2 ul li:first-child figure {text-align: right;}
+.maze .box2 ul li:first-child figure img {width: 75%;}
+.maze .box2 ul li p {text-align: center; margin: 15px 0 0;}

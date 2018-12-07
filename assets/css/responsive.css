@@ -17,7 +17,8 @@
     .curriculum .list ul li dl dt {width:40%; margin-top: 0px; margin-left: 0px; padding:40px; height:auto;}
 
     /* 마이페이지 */
-    .mypArea .container {width:calc(100% - 320px);}
+    .mypArea .container {width: calc(100% - 320px);}
+    .message .container {width: calc(100% - 40px);}
 
 }
 
@@ -32,7 +33,6 @@
     .curr_list.row4 li {width:calc(33.3334% - 19px) !important;}
     .curr_list.row4 li:nth-child(4n) {margin: 0 25px 25px 0; }
     .curr_list.row4 li:nth-child(3n) {margin: 0 0px 25px 0; }
-
     .curr_list.row3 > ul > li {width:calc(50% - 12.5px); margin: 0 25px 25px 0;}
     .curr_list.row3 > ul > li:nth-child(2n) {margin: 0 0 25px 0;}
     .curr_list.row3 > ul > li:nth-child(3n) {margin: 0 25px 25px 0;}
@@ -42,7 +42,6 @@
     .mypArea h2 {font-size:20px;}
     .settings .box table th {width:81px; text-align: left;}
     .settings .box table td:last-child {min-width:55px;}
-
 }
 
 @media (max-width:979px){
@@ -61,11 +60,7 @@
 
 @media (max-width:767px){
 
-    .login .container {margin: 30px auto 60px;}
-    .loginArea {width:60%;}
-    .loginArea form dl,
-    .loginArea.step1 ul.loginOther li,
-    .loginArea.step1 .line {width: 100%; max-width:320px;}
+    .login .container {margin: 30px auto 0px; padding: 0 0 60px;}
 
     header {display: none;}
     .header-wrap {height: 60px;}
@@ -123,13 +118,6 @@
     .mypArea .container {width: 100%; float: none;}
 
     /* 로그인, 회원가입 팝업 */
-    .pop-wp .btn-pop-close {font-family: xeicon!important; width:50px;height:50px; line-height: 50px; text-align: center; content: "\e922"; display: inline-block; position: absolute; right:0; top:0; font-size:32px; cursor:pointer;}
-    .joinArea,
-    .findArea,
-    .loginArea {width: 100%; height:auto; max-width:100%;}
-    .joinArea .right {padding: 50px 0;}
-    .joinArea .left {width:80%; margin: 0 auto; padding: 0; background: transparent;}
-
     .map_util address {float: none; width:100%; height:auto;}
     .map_util .map_link {float: none; text-align: center; margin: 25px  auto 0; }
 
@@ -140,6 +128,16 @@
     footer h1 {float: none; margin-bottom: 20px;}
     footer .info {float: none; width: 100%;}
     footer .info .address span {display: block; height: 0px}
+
+}
+
+
+@media (max-width:480px){
+
+    .login .container {background: #fff;}
+    .joinArea,
+    .findArea,
+    .loginArea {width: 100%; height:auto; max-width:100%; webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
 
 }
 

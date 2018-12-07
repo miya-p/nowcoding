@@ -10,7 +10,6 @@
 .main section {margin: 150px 0}
 section h2 {text-align: center; font-size:50px; line-height: 40px; height: auto; margin: 0 0 50px; font-family: "Montserrat"; font-weight: 600; color:#222;}
 
-
 .specArea h2 {display: none;}
 .specArea ul li {position: relative; padding: 70px 0 130px;}
 .specArea ul li dl > * {float: left; width:50%;}
@@ -87,6 +86,14 @@ section.lscArea h2 br {display: none;}
 .lscArea .lsc .galaxy .g07 {margin-top:331px; margin-left: 283px;}
 .lscArea .lsc .galaxy .g08 {margin-top:353px; margin-left: 302px;}
 #waves {width: 100%; height: 120px; background-color: #fff; padding-top: 30px}
+
+
+.curr_landing ul:after {content: ""; clear: both; display: block;}
+.curr_landing ul li {float: left; width:33.3334%; }
+.curr_landing ul li figure {max-height: 300px; position: relative; width: 300px; border-radius: 50%; margin: 0 auto;}
+.curr_landing ul li figure img {height:100%;}
+.curr_landing ul li .title {position: relative; top: -20px;}
+.curr_landing ul li .title a {font-size:18px; display: block; width:250px; height:50px; line-height: 50px; border-radius: 25px; background: #222; color:#fff; text-align: center; margin: 0 auto;}
 
 @media all and (max-width:1279px){
 	.expArea .course .spec { width: 30%; margin-left: 10%;}

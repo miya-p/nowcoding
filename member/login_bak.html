@@ -47,7 +47,7 @@
             <div class="__member loginArea">
                 <form class="" action="index.html" method="post">
                     <dl class="">
-                        <dd><input type="text" name="log_id" value="" placeholder="이메일" required></dd>
+                        <dd><input type="text" name="log_id" value="" placeholder="아이디" required></dd>
                         <dd>
                             <input type="password" name="log_pw" value="" placeholder="비밀번호" required class="wrong">
                             <small><i class="xi-warning"></i><span>입력값 잘못되었을 때 스타일</span></small>
@@ -57,12 +57,17 @@
                         </dd>
                         <dd><button type="button" name="button">로그인</button></dd>
                         <dd class="util">
-                            <a href="findid.html"></a>
-                            <a href="findpw.html"></a>
+                            <a href="findid.html">아이디 찾기</a><span>&bull;</span>
+                            <a href="findpw.html">비밀번호 찾기</a>
                             <a href="join.html">회원가입</a>
                         </dd>
                     </dl>
                 </form>
+                <div class="line">OR</div>
+                <ul class="loginOther">
+                    <li><a href="#">볼비온으로 로그인 <span class="ico_b"></span></a></li>
+                    <li><a href="#">레슨어블로 로그인 <span class="ico_l"></span></a></li>
+                </ul>
             </div>
 
         </div><!-- e.container-->
